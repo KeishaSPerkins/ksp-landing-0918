@@ -1,27 +1,20 @@
 .home-content-wrapper
-	max-width: 500px
-	display: flex
-	flex-flow: column wrap
-	justify-content: center 
-	align-items: center
-	.headshot
-		width: 60%
-		border-radius: 50%
-		display: -moz-box
-		margin: auto
-	.description
-		line-height: 2
-		padding: 2px 0
-		width: 90%
-		margin: 0
-		font-weight: 500
-		margin-top: 1rem
-		.activity-link
-			padding: 0 3px 
-			text-decoration: none
-			color: #333
-			border-bottom: 3px solid $accent-color
-			transition: all .3s ease
-			&:hover
-				background: rgba($accent-color, .9)
-				color: white
+	height: 100vh
+	width: 100vw
+	background-color: $teal
+	padding: 0
+	margin: 0
+.bio-paragraph
+	font-family: $sans-serif
+	font-weight: bold
+	color: $darkgray
+	margin: 150px auto
+	padding: 0
+	max-width: 800px
+	.bio-activity-link
+		color: white
+		text-decoration: none
+		border-bottom: 1.5px solid transparent
+		transition: border .3s ease-in-out
+		&:hover
+			border-bottom-color: white
