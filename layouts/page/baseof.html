@@ -1,6 +1,6 @@
 {{ partial "meta.html" . }}
 {{ partial "main-header.html"}}
-<body class="home">
+<body class="{{ .Params.class}}">
 
 <main class="main-wrapper">
  {{ block "main-block" . }}

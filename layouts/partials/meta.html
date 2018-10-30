@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ $styles := resources.Get "sass/style.sass" | toCSS | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}"  media="screen">
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" type="text/css" media="screen">
   <title>Keisha S Perkins{{if isset .Params "title" }} | {{ .Title }}{{end}} </title>
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i|Montserrat:400,500,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
 </head>

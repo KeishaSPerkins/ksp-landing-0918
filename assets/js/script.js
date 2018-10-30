@@ -1,11 +1,17 @@
-// let menuToggleButton = document.getElementById("#menu-toggle");
+let menuToggleButton = document.getElementById("menu-toggle");
+let miniMenu = document.getElementById("main-mini-menu");
 
-document.getElementById("#menu-toggle").addEventListener("click", toggleMenu);
+menuToggleButton.addEventListener("click", toggleMenu);
 
 function toggleMenu(){
-	if (document.getElementById("#menu-toggle").classList.contains('open')){
-		document.getElementById("#menu-toggle").classList.remove('open');
+	if (menuToggleButton.classList.contains('open')){
+		menuToggleButton.classList.remove('open');
+		miniMenu.classList.remove('open');
+		menuToggleButton.innerHTML = "<svg><use href='#menu' /></svg>";
 	} else{
-		document.getElementById("#menu-toggle").classList.add('open');
+		menuToggleButton.classList.add('open');
+		miniMenu.classList.add('open');
+		menuToggleButton.innerHTML = "<svg><use href='#cross' /></svg>";
+
 	}
 }
