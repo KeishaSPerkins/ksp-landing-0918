@@ -1,0 +1,6 @@
+{{ $scripts := resources.Get "js/script.js" | minify }}
+<script src="{{ $scripts.Permalink }}" type="text/javascript"></script>
+
+<footer class="main-footer">
+	<p class="copyright">Copyright&nbsp;&copy;Keisha S Perkins <span class="currentrear">2018</span></p>
+</footer>
