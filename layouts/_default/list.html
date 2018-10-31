@@ -1,25 +1,29 @@
 {{ define "main-block"}}
 <h1 class="list-page-title">
-{{ .Title }}
-<br>
-<small class="subtitle">{{ .Params.subtitle }}</small>
+	{{ .Title }}
+	<br>
+	<small class="subtitle">{{ .Params.subtitle }}</small>
 </h1>
 <section class="list-content">
 
 	{{ if eq .Params.whatPage "writing" }}
-	{{ $pag := (.Paginator 3) .Data.Pages }}
-    {{ range $pag.Pages }}
-      {{ partial "blog-post-card.html" .}}
-    {{ end }}
+		{{ $pag := (.Paginator 3) .Data.Pages }}
+		{{ range $pag.Pages }}
+			{{ partial "blog-post-card.html" .}}
+		{{ end }}
 	{{ end }}
 
 	{{ if eq .Params.whatPage "teaching" }}
-		{{ range $index, $element := .Sections }}
-			{{ partial "talk-post-card.html" . }}
+		{{ if .Sections }}
+		{{ range  .Sections }}
+		{{ partial "talk-post-card.html" . }}
+		{{ end }}
 		{{ end }}
 	{{ end }}
-	{{ template "_internal/pagination.html" . }}
 
+	<section class="paginator-wrapper">
+		{{ template "_internal/pagination.html" . }}
+	</section>
 
 
 </section>
