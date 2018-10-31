@@ -1,0 +1,36 @@
+<article class="card">
+	<header class="card-header">
+		<h1 class="post-title">{{ .Title }}</h1>
+	</header>
+	<section class="card-body">
+		<p class="lesson-description">
+			{{ .Summary | truncate 150 }}
+		</p>
+		<ul class="lesson-asset-list">
+			{{ range .Data.Pages }}
+				{{ if isset .Params "what" }}
+					<li class="lesson-asset">
+						{{ if isset .Params "pointer" }}
+						<a class="lesson-asset-button action-button" {{ if eq .Params.external true }} target="_blank" {{end}} href="{{ .Params.pointer }}">
+							{{ .Params.what}}
+							{{ if eq .Params.external true }} &#128471; {{end}}
+						</a> 
+						{{ end }}
+						{{ if not (isset .Params "pointer") }}
+						<a class="lesson-asset-link action-button" {{ if eq .Params.external true }} target="_blank" {{end}} href="{{ .Permalink }}">
+							{{ .Params.what}}
+							{{ if eq .Params.external true }} &#128471; {{end}}
+						</a> 
+						{{ end }}
+					</li>
+				{{ end }}
+			{{ end }}
+		</ul>
+	</section>
+	<footer class="card-footer">
+		<p class="post-meta">
+			{{ .Params.author }} | 
+			<time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
+		</p>
+	</footer>
+</article>

@@ -1,0 +1,36 @@
+.pagination
+	list-style: none
+	display: flex
+	padding: 0
+	margin: 0
+	text-align: center
+	justify-content: space-between		
+	li
+		display: flex
+		border-radius: 2px
+		overflow: hidden
+		margin: 5px
+		a			
+			padding: 5px 14px
+			border-radius: 45px
+			transition: background, color .3s ease
+			color: white
+			font-weight: bold
+			text-decoration: none
+		&.active
+			border: 1px solid white
+			a
+				color: white
+		&:hover
+			background: white
+			a
+				color: $darkgray
+		&.disabled
+			a
+				color: #888
+				color: rgba(white, .3)		
+		&.disabled:hover
+			background: none
+			a
+				color: #888
+				color: rgba(white, .3)		
