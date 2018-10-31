@@ -1,7 +1,12 @@
 {{ partial "meta.html" . }}
 {{ partial "main-header.html"}}
-<body class="home">
 
+
+<!-- <body class='{{if isset .Params "whatPage" }} | {{ .Params.whatPage }}{{end}}'>
+ -->
+{{ $whatPage := .Params.whatPage }}
+
+<body class="{{ $whatPage }}">
 <main class="main-wrapper">
  {{ block "main-block" . }}
  {{end}}

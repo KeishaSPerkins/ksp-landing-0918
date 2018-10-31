@@ -1,0 +1,14 @@
+{{ define "main-block"}}
+<h1 class="list-page-title">
+{{ .Title }}
+<br>
+<small class="subtitle">{{ .Params.subtitle }}</small>
+</h1>
+<section class="list-content">
+	{{ $pag := .Paginate .Data.Pages }}
+        {{ range $pag.Pages }}
+            {{ partial "blog-post-card.html" .}}
+        {{ end }}
+
+</section>
+{{ end }}
