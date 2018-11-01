@@ -2,12 +2,11 @@
 {{ partial "main-header.html"}}
 
 
-<!-- <body class='{{if isset .Params "whatSection" }} | {{ .Params.whatSection }}{{end}}'>
- -->
-{{ $whatSection := .Params.whatSection }}
 
-<body class="{{ $whatSection }}">
-<main class="main-wrapper">
+
+<body class='{{ .Type }}{{ if eq .Kind "page" }} single{{ end }}{{ if eq .Kind "section" }} section{{ end }}{{ if eq .Kind "home" }} home{{ end }}{{ if eq .Kind "taxonomy" }} taxonomy{{ end }}{{ if eq .Kind "taxonomyTerm" }} taxonomyTerm{{ end }}'>
+
+<main class='main-wrapper'>
  {{ block "main-block" . }}
  {{end}}
 </main>

@@ -4,7 +4,7 @@
 	</header>
 	<section class="card-body">
 		<p class="lesson-description">
-			{{ .Summary | truncate 150 }}
+			{{ .Content | safeHTML }}
 		</p>
 		<ul class="lesson-asset-list">
 			{{ range .Data.Pages }}
