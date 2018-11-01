@@ -2,11 +2,11 @@
 {{ partial "main-header.html"}}
 
 
-<!-- <body class='{{if isset .Params "whatPage" }} | {{ .Params.whatPage }}{{end}}'>
+<!-- <body class='{{if isset .Params "whatSection" }} | {{ .Params.whatSection }}{{end}}'>
  -->
-{{ $whatPage := .Params.whatPage }}
+{{ $whatSection := .Params.whatSection }}
 
-<body class="{{ $whatPage }}">
+<body class="{{ $whatSection }}">
 <main class="main-wrapper">
  {{ block "main-block" . }}
  {{end}}

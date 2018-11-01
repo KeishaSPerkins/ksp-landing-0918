@@ -6,18 +6,24 @@
 </h1>
 <section class="list-content">
 
-	{{ if eq .Params.whatPage "writing" }}
-		{{ $pag := (.Paginator 3) .Data.Pages }}
+	{{ if eq .Params.whatSection "writing" }}
+		{{ $pag := (.Paginator 12) .Data.Pages }}
 		{{ range $pag.Pages }}
 			{{ partial "blog-post-card.html" .}}
 		{{ end }}
 	{{ end }}
 
-	{{ if eq .Params.whatPage "teaching" }}
+	{{ if eq .Params.whatSection "teaching" }}
 		{{ if .Sections }}
-		{{ range  .Sections }}
+		<!-- {{ range  .Sections }}
 		{{ partial "talk-post-card.html" . }}
-		{{ end }}
+		{{ end }} -->
+		{{ $ps := .Paginate .Sections 12}}
+{{ range $ps.Pages }}
+		{{ partial "talk-post-card.html" . }}
+{{ end }}
+
+
 		{{ end }}
 	{{ end }}
 

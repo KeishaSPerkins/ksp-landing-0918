@@ -1,5 +1,5 @@
 ---
-whatPage: teaching
+whatSection: teaching
 title: "Teaching"
 subtitle: Talks and workshops by Keisha S Perkins
 ---
