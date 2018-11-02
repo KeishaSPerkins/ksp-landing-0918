@@ -1,9 +1,20 @@
 {{ define "main-block"}}
-<h1 class="list-page-title">
-	{{ .Title }}
-	<br>
-	<small class="subtitle">{{ .Params.subtitle }}</small>
-</h1>
+{{ if eq .Kind "section" }}
+	<h1 class="list-page-title">
+		{{ .Title }}
+		<br>
+		<small class="subtitle">{{ .Params.subtitle }}</small>
+	</h1>
+{{ end }}
+
+{{ if eq .Kind "taxonomy" }}
+	<h1 class="list-page-title">
+		{{ if eq .Type "tags" }}Posts tagged {{ .Title }}{{ end }}
+		{{ if eq .Type "categories" }}Posts in the {{ .Title }} category  {{ end }}
+		{{ if eq .Type "authors" }}Posts written by {{ .Title }}{{ end }}
+	</h1>
+
+{{ end }}
 <section class="list-content">
 
 	{{ if eq .Type "writing" }}
@@ -15,15 +26,17 @@
 
 	{{ if eq .Type "teaching" }}
 		{{ if .Sections }}
-		<!-- {{ range  .Sections }}
-		{{ partial "talk-post-card.html" . }}
-		{{ end }} -->
-		{{ $ps := .Paginate .Sections 10}}
-{{ range $ps.Pages }}
-		{{ partial "talk-post-card.html" . }}
-{{ end }}
+			{{ $ps := .Paginate .Sections 10}}
+			{{ range $ps.Pages }}
+				{{ partial "talk-post-card.html" . }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
 
-
+	{{ if eq .Kind "taxonomy" }}
+		{{ $ts := .Paginate .Sections}}
+		{{ range .Pages }}
+			{{ partial "taxonomy-and-term-card.html" . }}
 		{{ end }}
 	{{ end }}
 

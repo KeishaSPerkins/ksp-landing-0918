@@ -4,8 +4,7 @@ date: 2018-04-02T10:34:10-05:00
 draft: false
 tags: ['illustrator', 'tips & tricks', 'software', 'adobe']
 categories: ["design"]
-type: "post"
-author: "Keisha S Perkins"
+authors: ["Keisha S Perkins"]
 ---
 
 When I began to foray into Adobe's Creative Suite, I was using Photoshop for everything. Need a logo for lots of uses? Just deliver a huge PNG! Want to draw a nice crisp illustration? Photoshop's pen tool works just fine for that, right? 

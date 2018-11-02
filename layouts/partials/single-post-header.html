@@ -7,19 +7,33 @@
 	</h1>
 	<p class="post-meta">
 		{{ with .Params.authors }}
-    <ul>
+        <ul class="authors-list">
+            {{range .}}
+                <li class="author"><a href="/authors/{{ . | urlize }}">{{ . }}</a></li>
+            {{end}}
+        </ul>
+        {{ end }} 
+    
+        &bull; 
+
+        <time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
+	</p>
+    <p class="post-taxonomies">
+        Category: {{ with .Params.categories }}
+    <ul class="taxonomy-list categories-list">
         {{range .}}
-            <li>
-                <a href="/authors/{{ . | urlize }}">{{ . }}</a>
+            <li class="taxonomy-item"><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+        {{end}}
+    </ul>
+    {{ end }} 
+     Tags: {{ with .Params.tags }}
+    <ul class="taxonomy-list tags-list">
+        {{range .}}
+            <li class="taxonomy-item">
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
             </li>
         {{end}}
     </ul>
     {{ end }} 
-    
-    &bull; 
-
-    <time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
-
-    <!-- I'm not sure why the authors taxonomy page isn't rendering -->
-	</p>
+    </p>
 </header>

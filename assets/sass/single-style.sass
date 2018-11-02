@@ -1,0 +1,35 @@
+body.single
+	background-color: #eee
+	background-image: radial-gradient(white, #eee)
+	.post-header
+		.post-title
+		.post-meta
+	.authors-list
+		padding: 0
+		list-style: none
+		display: inline
+		.author
+			display: inline
+			&:not(:last-child):after
+						content: ","	
+		a
+			color: $darkgray
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.post-taxonomies
+		display: inline
+		color: $darkgray
+	.taxonomy-list
+		padding: 0
+		list-style: none
+		display: inline
+		.taxonomy-item
+			display: inline
+			&:not(:last-child):after
+						content: ","	
+		a
+			color: lighten($darkgray, 10%)
+			text-decoration: none
+			&:hover
+				text-decoration: underline

@@ -1,0 +1,45 @@
+body.taxonomy
+	height: 100vh
+	background-color: #eee
+	background-image: radial-gradient(white, #eee)
+	.main-header
+		background-color: darken($teal, 3%)
+	.list-page-title
+		color: $darkgray
+		font-size: 1.5rem
+		text-transform: none
+	.list-content
+		display: flex
+		flex-flow: column
+	.result
+		border-top: 1px dotted $darkgray
+		padding: 0 .5rem
+		width: 100%
+		text-decoration: none
+		color: $darkgray
+		transition: background .2s ease
+		&:hover
+			background: rgba($teal, .09)
+			.result-title
+				text-decoration: underline
+				color: darken($teal, 10%)
+		.result-title
+			transition: color .2s ease
+			font-size: 1rem
+			color: $teal
+			.what
+				text-transform: capitalize 
+		.result-summary
+			font-size: .9rem
+			margin: 10px 0 0
+		.result-footer
+			font-size: .7rem
+			.author-names
+				padding: 0
+				list-style: none
+				display: inline
+				li
+					display: inline
+					&:not(:last-child):after
+						content: ","
+					

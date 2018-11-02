@@ -1,5 +1,5 @@
 ---
-title: "Using JavaScript Libraries for Game Development"
+title: "An Introduction to P5.js for Game Development"
 date: 2018-02-24T14:07:29-05:00
 draft: false
 what: notes
@@ -13,7 +13,7 @@ tags:
 - HTML canvas
 categories:
 - coding
-author: Keisha S Perkins
+authors: ["Keisha S Perkins"]
 ---
 
 This talk is about using JavaScript to create games on the [HTML5 canvas](https://www.w3schools.com/html/html5_canvas.asp). Though you won’t create the next Halo, you’ll learn so much about JavaScript and programming as a whole when you create games with it. In this talk, I’ll introduce you to a library that’s perfect for beginners and “non-coders” alike called [p5.js.](https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js)
