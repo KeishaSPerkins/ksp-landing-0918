@@ -34,14 +34,13 @@ The first thing we need to know about p5.js is that there are two main functions
 ### Creating the Canvas
 
 So let’s start by creating the canvas we want to draw on. We’ll tell the computer we want the canvas to be 800 pixels wide and 300 pixels tall. We’ll also tell it that we want the canvas to be black. Here's the code:
+
 {{< highlight js >}}
 function setup() {
 	createCanvas(800, 300);
 	background('black');
 }
-
 function draw() {
-
 }
 {{< /highlight >}}
     	

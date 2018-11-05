@@ -12,10 +12,7 @@ I think it's fair to say that all of us have at one time or another needed to ge
 
 ## Pexels: Free Stock Photos and Video
 
-<figure>
-	<img src="/../images/top-five-freebies/pexels.PNG" alt="Screenshot of Pexels.com Search Results">
-	<figcaption>Pexels</figcaption>
-</figure>
+{{< image name="pexels.PNG" alt="Screenshot of Pexels.com" caption="Pexels" >}}
 
 Though the free stock <a href="http://pexels.com" target="_blank">images</a> are what brought me to Pexels in the first place, you can also find quality stock <a href="https://videos.pexels.com/" target="_blank">videos</a> there. Pexels' simple, clean interface makes searching for the image you want easy. Pexels is always a go-to and often has just what I need.
 
@@ -23,10 +20,8 @@ All of the videos and photos come with a Creative Commons Zero (CC0) license, wh
 
 ## Creative Market: Free Goodies Weekly
 
-<figure>
-	<img src="/../images/top-five-freebies/creative-market.PNG" alt="Screenshot of Weekly Free Goods From Creative Market">
-	<figcaption>Creative Market</figcaption>
-</figure>
+
+{{< image name="creative-market.PNG" alt="Screenshot of Weekly Free Goods from Creative Market" caption="Creative Market" >}}
 
 I can hear you now, "But Creative Market is a _marketplace!_" you say. And while it's true that <a href="http://creativemarket.com" target="_blank">Creative Market</a> is a place for artists to buy and sell their creations, it's also a source of some quality freebies. 
 
@@ -36,10 +31,8 @@ And don't worry about filling up your precious storage space with assets you don
 
 ## Mockup World: Free Mockups of All Kinds
 
-<figure>
-	<img src="/../images/top-five-freebies/mockup-world.PNG" alt="Screenshot of Mock Up World">
-	<figcaption>Mockupworld</figcaption>
-</figure>
+{{< image name="mockup-world.PNG" alt="Screenshot of Mockup World" caption="Mockup World" >}}
+
 
 <a href="https://www.mockupworld.co/">Mockup World</a> was one of the resources I was amazed to find for the first time. Looking for a good mockup can be challenging. Perhaps it's not the right size. Perhaps it's an awkward angle. Mockup World brings tons of free mockups to one place and takes some of that hassle away.
 
@@ -47,10 +40,7 @@ A design looks just that much more polished and possible when mocked up well. I 
 
 ## Icon Finder: Icons and Symbols
 
-<figure>
-	<img src="/../images/top-five-freebies/icon-finder.PNG" alt="Screenshot of Icon Finder">
-	<figcaption>Iconfinder</figcaption>
-</figure>
+{{< image name="icon-finder.PNG" alt="Screenshot of Icon Finder" caption="Icon Finder" >}}
 
 Sometimes you're just looking for a set of icons to give your project a cohesive feel. It's hard to go from this place to that place piecing a set of icons together from different designers with different styles. <a href="https://www.iconfinder.com/">Icon Finder</a> allows you to search it's database of 2,200,000+ SVG icons by keyword and filter for free icons, and even free icons for personal use.
 
@@ -58,10 +48,8 @@ My favorite feature of the site is it's collection of icon sets. They, too can b
 
 ## Speckyboy: The One-Stop Shop
 
-<figure>
-	<img src="/../images/top-five-freebies/speckyboy.PNG" alt="Screenshot of Speckyboy">
-	<figcaption>Speckyboy</figcaption>
-</figure>
+{{< image name="speckyboy.PNG" alt="Screenshot of Speckyboy" caption="Speckyboy" >}}
+
 
 Speckyboy is an online web design magazine. I just love Speckyboy as a source for inspiration and information on new web technologies and techniques, but one of the great things I go there for is free assets. 
 
@@ -69,8 +57,18 @@ From code snippets, to icons, to templates and everything in between, Speckyboy 
 
 ## Honorable Mentions
 
-#### <a href="https://pixelbuddha.net/freebies/" target="_blank">Pixel Buddha: Various Design Freebies</a>
-#### <a href="https://pngtree.com/" target="_blank">PNG Tree: PNG Images</a>
-#### <a href="https://unsplash.com/" target="_blank">Unsplash: Stock Photography</a>
-#### <a href="https://www.pixeden.com/">Pixeden: Free and Premium Web Assets</a>
-#### <a href="https://www.premiumbeat.com/blog/category/free-for-video/">Premium Beat: Free Video Assets</a>
+<ul>
+	<li><a href='https://pixelbuddha.net/freebies/' target='_blank'>Pixel Buddha: Various Design Freebies</a></li>
+	<li><a href="https://pngtree.com/" target="_blank">PNG Tree: PNG Images</a></li>
+	<li><a href="https://unsplash.com/" target="_blank">Unsplash: Stock Photography</a></li>
+	<li><a href="https://www.pixeden.com/">Pixeden: Free and Premium Web Assets</a></li>
+	<li><a href="https://www.premiumbeat.com/blog/category/free-for-video/">Premium Beat: Free Video Assets</a></li>
+</ul>
+
+
+
+
+
+
+
+

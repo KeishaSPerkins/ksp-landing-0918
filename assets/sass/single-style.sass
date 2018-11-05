@@ -2,6 +2,8 @@ body.single
 	background-color: white
 	h1,h2,h3,h4,h5,h6
 		color: darken($main-focus-color, 10%)
+	@media screen and (min-width: 800px)
+		grid-template-columns: 1fr minmax(250px, 750px) 1fr
 	blockquote
 		border-left: 2px solid $main-focus-color
 		padding: 1rem
@@ -15,7 +17,7 @@ body.single
 			content: open-quote
 			font-size: 4em
 			position: absolute
-			top: -2.5rem
+			top: -2rem
 			left: .5rem
 			color: $main-focus-color
 		// &:after
@@ -79,21 +81,22 @@ body.single
 	.post-content
 		margin-top: 2rem
 		line-height: 1.5
+		width: 100%
 		
 		.post-image-figure
-			width: 95%
-			max-width: 700px
-			margin: auto
-			border-radius: 5px
-			background: #dddddd
+			width: 100%
+			margin: 1.5rem auto
+			// border-radius: 5px
+			// background: #dddddd
 			a
-				border-radius: 5px
+				// border-radius: 5px
 				.post-image
 					width: 100%
-					border-radius: 5px 5px 0 0
+					border-radius: 5px
 			.post-image-caption
 				margin: 0
 				padding: 15px
+				padding-top: 0
 				font-size: .9rem
 				font-style: italic
 				p
@@ -102,6 +105,7 @@ body.single
 		pre 
 			padding: 1rem
 			border-radius: 5px
+			background: black
 			code
 				color: white
 				background: none
@@ -122,5 +126,7 @@ body.single
 			bottom: 0
 			right: 0
 	.main-footer
-		color: $darkgray			
+		color: $darkgray		
+	iframe
+		width: 100%	
 			

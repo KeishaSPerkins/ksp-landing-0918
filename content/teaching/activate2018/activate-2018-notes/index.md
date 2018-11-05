@@ -43,23 +43,16 @@ The first thing we need to know about p5.js is that there are two main functions
 ### Creating the Canvas
 
 So let’s start by creating the canvas we want to draw on. We’ll tell the computer we want the canvas to be 800 pixels wide and 300 pixels tall. We’ll also tell it that we want the canvas to be black. Here's the code:
+{{< highlight js >}}
+function setup() {
+	createCanvas(800, 300);
+	background('black');
+}
 
-    function setup() {
+function draw() {
 
-    	createCanvas(800, 300);
-
-    	background('black');
-
-    }
-
-    
-
-    function draw() {
-
-    
-
-    }
-
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/blankcanvas)
@@ -69,25 +62,17 @@ So let’s start by creating the canvas we want to draw on. We’ll tell the com
 Not terribly impressive. But let’s draw on that canvas. In the draw function, let’s add an ellipse that is 80 pixels in from the left and 50 pixels down from the top. We’ll also make it 20 pixels wide and 60 pixels tall.
 
 Here's the code:
+{{< highlight js >}}
+function setup() {
+	createCanvas(800, 300);
+	background('black');
+}
 
-    function setup() {
+function draw() {
+	ellipse(80,50,20,60)
 
-    	createCanvas(800, 300);
-
-    	background('black');
-
-    }
-
-    
-
-    function draw() {
-
-    	ellipse(80,50,20,60)
-
-    
-
-    }
-
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/blankcanvaswithellipse)
@@ -99,23 +84,17 @@ Though this ellipse appears to be still, it is being drawn 60 times each second.
 Now let’s add some movement. We can use a set of p5.js variables called `mouseX` and `mouseY` to make the ellipse follow our mouse instead of telling the computer a specific location. At the start of every draw function, the computer will look to see where our mouse cursor is and draw our ellipse right underneath.
 
 Here's the code:
+{{< highlight js >}}
+function setup() {
+	createCanvas(800, 300);
+	background('black');
+}
 
-    function setup() {
 
-    	createCanvas(800, 300);
-
-    	background('black');
-
-    }
-
-    
-
-    function draw() {
-
-    	ellipse(mouseX, mouseY, 50, 50);
-
-    }
-
+function draw() {
+	ellipse(mouseX, mouseY, 50, 50);
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/ellipsefollowsmousewithpath)
@@ -127,24 +106,16 @@ Remember that we said things in the `setup()` function only happen once? What if
 The result is that the ellipse’s “tail” has gone away because the background is draw at the start of each frame, covering the ellipse from the last frame. This simple loop allows us to simulate the real-world look of movement on our 2D canvas
 
 Here's the code:    
+{{< highlight js >}}
+function setup() {
+	createCanvas(800, 300);
+}
 
-
-    function setup() {
-
-    	createCanvas(800, 300);
-
-    }
-
-    
-
-    function draw() {
-
-    	background('black');
-
-    	ellipse(mouseX, mouseY, 50, 50);
-
-    }
-
+function draw() {
+	background('black');
+	ellipse(mouseX, mouseY, 50, 50);
+}
+{{< /highlight >}}
     	
 
 
@@ -174,25 +145,19 @@ The main building block of p5.play, a sprite is an element able to store images 
 Adding a sprite is pretty simple, we just need a variable for our sprite to live in. We use the `CreateSprite()` function to make a sprite that is 150 pixels down from the top and 150 pixels down from the bottom. The sprite will be 50 pixels wide and 160 pixels tall. In our `draw()` function, we use `drawSprites()` to let the computer know that we want to see our sprites.
 
 Here's the code:
+{{< highlight js >}}
+var robot;
 
-    var robot;
+function setup() {
+	robot = createSprite(150,150,50,160);
+	createCanvas(800, 300);
+}
 
-    function setup() {
-
-    	robot = createSprite(150,150,50,160);
-
-    	createCanvas(800, 300);
-
-    }
-
-    function draw() {
-
-    	background('black');
-
-    	drawSprites();
-
-    }
-
+function draw() {
+	background('black');
+	drawSprites();
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/addourfirstsprite)
@@ -208,31 +173,20 @@ P5.play very conveniently keeps track of these for us. We just need to name the 
 **Note:** The files referenced here are saved in the same folder as the p5.js sketch. In order for your animations to work, you will need images to assign. A great place to find free sprites is [opengameart.com](http://opengameart.org)
 
 Here's the code:
+{{< highlight js >}}
+var robot;
 
-    var robot;
+function setup() {
+	robot = createSprite(150,150,50,160);
+	robot.addAnimation("idle", "images/Idle02.png", "images/Idle09.png");
+	createCanvas(800, 300);
+}    
 
-    
-
-    function setup() {
-
-    	robot = createSprite(150,150,50,160);
-
-    	robot.addAnimation("idle", "images/Idle02.png", "images/Idle09.png");
-
-    	createCanvas(800, 300);
-
-    }
-
-    
-
-    function draw() {
-
-    	background('black');
-
-    	drawSprites();
-
-    }
-
+function draw() {
+	background('black');
+	drawSprites();
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/animateoursprite)
@@ -246,43 +200,28 @@ What if we want to add some interaction? Let’s give the computer some instruct
 Then, in our draw function, we’ll put a bit of logic that first checks to see if someone is pressing the right arrow key, and then changes the robot’s velocity so that she moves to the right. The robot will also change animations when the key is pressed, creating the effect of running.
 
 Here's the code:
+{{< highlight js >}}
+var robot;
 
-    var robot;
 
-    
+function setup() {
+	robot = createSprite(150,150,50,160);
+	robot.addAnimation("idle", "images/idle01.png", "images/idle09.png");
+	robot.addAnimation("jump", "images/jump01.png", "images/jump10.png");
+	createCanvas(800, 300);			
+}
 
-    function setup() {
 
-    	robot = createSprite(150,150,50,160);
-
-    	robot.addAnimation("idle", "images/idle01.png", "images/idle09.png");
-
-    	robot.addAnimation("jump", "images/jump01.png", "images/jump10.png");
-
-    	createCanvas(800, 300);			
-
-    }
-
-    
-
-    function draw() {
-
-    	background('black');			
-
-    	if(keyIsDown(32)){
-
-    		robot.changeAnimation("jump");
-
-    	} else if(!keyIsDown(32)) {
-
-    		robot.changeAnimation("idle");
-
-    	}
-
-    	drawSprites();
-
-    }
-
+function draw() {
+	background('black');			
+	if(keyIsDown(32)){
+		robot.changeAnimation("jump");
+	} else if(!keyIsDown(32)) {
+		robot.changeAnimation("idle");
+	}
+	drawSprites();
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/keypressspriteaction)
@@ -306,25 +245,17 @@ It will allow us to trigger songs and sounds at certain parts in the game. For i
 We'll add this code into our `setup()` function and introduce a new function, `preload()`.
 
 Here's the code:
+{{< highlight js >}}
+var gameMusic;
 
-    var gameMusic;
+function preload(){
+	gameMusic = loadSound('gameMusic.mp3');
+}
 
-    
-
-    function preload(){
-
-    	gameMusic = loadSound('gameMusic.mp3');
-
-    }
-
-    
-
-    function setup(){
-
-    	gameMusic.play();
-
-    }
-
+function setup(){
+	gameMusic.play();
+}
+{{< /highlight >}}
     	
 
 [Here's the result](examples/gameexample)
