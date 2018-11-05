@@ -25,14 +25,14 @@ body.teaching.single
 		&:hover
 			color: darken($teaching-focus-color, 10%)
 	code
-		background: rgba($teaching-focus-color, .1)
-		padding: 2px 5px
-		border-radius: 3px
-		border: 1px solid $teaching-focus-color
+		background-color: rgba($teaching-focus-color, .1)
+		border-color: $teaching-focus-color
 	blockquote
-		border-left: 3px solid $teaching-focus-color
-		padding: 1rem
-		background: rgba($teaching-focus-color, .1)
-		border-radius: 5px
+		border-color: $teaching-focus-color
+		background-color: rgba($teaching-focus-color, .1)
+		&:before
+			color: $teaching-focus-color
+		&:after
+			color: $teaching-focus-color
 
 

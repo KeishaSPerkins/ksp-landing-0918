@@ -3,9 +3,9 @@
 		<h1 class="post-title">{{ .Title }}</h1>
 	</header>
 	<section class="card-body">
-		<p class="lesson-description">
+		<span class="lesson-description">
 			{{ .Content | safeHTML }}
-		</p>
+		</span>
 		<ul class="lesson-asset-list">
 			{{ range .Data.Pages }}
 				{{ if isset .Params "what" }}
