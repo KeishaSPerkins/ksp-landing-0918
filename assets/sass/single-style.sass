@@ -1,9 +1,29 @@
 body.single
-	background-color: #eee
-	background-image: radial-gradient(white, #eee)
+	background-color: white
+	h1,h2,h3,h4,h5,h6
+		color: darken($main-focus-color, 10%)
+	blockquote
+		border-left: 3px solid $main-focus-color
+		padding: 1rem
+		background: rgba($main-focus-color, .1)
+		border-radius: 5px
+	a
+		color: $main-focus-color
+		&:hover
+			color: darken($main-focus-color, 10%)
+	code
+		background: rgba($main-focus-color, .1)
+		padding: 2px 5px
+		border-radius: 3px
+		border: 1px solid $main-focus-color
 	.post-header
 		.post-title
+			margin: 0 0 .5rem 0
 		.post-meta
+			color: lighten($darkgray, 30%)
+			font-size: .8rem
+			a
+				color: lighten($darkgray, 30%) !important
 	.authors-list
 		padding: 0
 		list-style: none
@@ -13,14 +33,15 @@ body.single
 			&:not(:last-child):after
 						content: ","	
 		a
-			color: $darkgray
+			color: lighten($darkgray, 30%)
 			text-decoration: none
 			&:hover
 				text-decoration: underline
 	.post-taxonomies
-		display: inline
-		color: $darkgray
+		font-weight: bold
 	.taxonomy-list
+		color: lighten($darkgray, 30%)
+		font-weight: normal
 		padding: 0
 		list-style: none
 		display: inline
@@ -29,7 +50,57 @@ body.single
 			&:not(:last-child):after
 						content: ","	
 		a
-			color: lighten($darkgray, 10%)
+			color: lighten($darkgray, 30%)
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+				color: $darkgray
+
+	.post-content
+		margin-top: 2rem
+		line-height: 1.5
+		
+		.post-image-figure
+			width: 95%
+			max-width: 700px
+			margin: auto
+			border-radius: 5px
+			background: #dddddd
+			a
+				border-radius: 5px
+				.post-image
+					width: 100%
+					border-radius: 5px 5px 0 0
+			.post-image-caption
+				margin: 0
+				padding: 15px
+				font-size: .9rem
+				font-style: italic
+				p
+					margin: 0
+					color: 
+		pre 
+			padding: 1rem
+			border-radius: 5px
+			code
+				color: white
+				background: none
+				border-radius: 0
+				border: 0
+		.video-wrapper 
+			position: relative
+			padding-bottom: 56.25% /* 16:9 */
+			// padding-top: 25px
+			height: 0
+			background: none
+			border-radius: 5px
+			overflow: hidden
+		.video-wrapper iframe 
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+	.main-footer
+		color: $darkgray			
+			

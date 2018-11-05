@@ -1,26 +1,17 @@
-<!-- <div class="picture"> -->
-  {{ if .Get "caption"}}
-  <!-- <figure> -->
-    {{ end }}
-    <picture>
-      <!-- Large screens -->
-      <source
-      media="(min-width: 535px)"
-      srcset="{{ .Site.BaseURL }}{{ .Get "src" }}.{{ .Get "type" }} 1x,
-      {{ .Get "src" }}@2x.{{ .Get "type" }} 2x">
-      <!-- Small screens -->
-      <source
-      media="(max-width: 534px)"
-      srcset="{{ .Site.BaseURL }}{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
-      {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x">
-      <!-- Fallback -->
-      <img class="lazy"
-      src="{{ .Site.BaseURL }}{{ .Get "src" }}.{{ .Get "type" }}"
-      srcset="{{ .Site.BaseURL }}{{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
-      alt="{{ .Get "alt" }}"{{ if .Get "caption"}} {{ end }}>
-    </picture>
-    {{ if .Get "caption"}}
-    <figcaption>{{ .Get "caption" }}</figcaption>
-  <!-- </figure> -->
-  {{ end }}
-<!-- </div> -->
+{{ $altText := .Get "alt"}}
+{{ $caption := .Get "caption"}}
+{{ with $.Page.Resources.GetMatch (.Get "name") }}
+  <figure class="post-image-figure">
+    <a href="{{.RelPermalink}}">
+      <img class="post-image"
+        srcset="
+          {{ (.Resize "320x").RelPermalink }} 320w,
+          {{ (.Resize "600x").RelPermalink }} 600w,
+          {{ (.Resize "1200x").RelPermalink }} 2x"
+        src="{{ (.Resize "600x").RelPermalink }}" alt="{{$altText}}"/>
+    </a>
+    <figcaption class="post-image-caption"><p>{{ $caption }}</p></figcaption>
+  </figure>
+{{ else }}
+  could not find image
+{{ end }}

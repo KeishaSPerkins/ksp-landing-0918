@@ -1,3 +1,15 @@
 {{ define "main-block"}}
-{{ partial "single-post-header.html" . }}
+
+	{{ partial "single-post-header.html" . }}
+
+	<article class="post-content">
+		{{ .Content }}
+	</article>
+
+	{{ partial "share-buttons.html" . }}
+
+	{{ if not .Params.nodisqus }}
+		{{ template "_internal/disqus.html" . }}
+	{{end}}
+
 {{end}}

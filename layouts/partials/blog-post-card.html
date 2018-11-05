@@ -10,7 +10,14 @@
 	</section>
 	<footer class="card-footer">
 		<p class="post-meta">
-			{{ .Params.author }} | 
+			{{ with .Params.authors }}
+		<ul class="author-names">
+			{{ range . }}
+			<li>{{ . }}</li>
+			{{ end }}
+		</ul>
+		{{ end }}
+		&bull;
 			<time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
 		</p>
 	</footer>

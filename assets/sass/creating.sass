@@ -1,5 +1,27 @@
+body.creating
+	.main-header
+		background: rgba(darken($creating-focus-color, 10%), .8)
+
 body.creating.section
-	background-color: $gold
-	background-image: radial-gradient(lighten($gold, 10%),darken($gold, 2%))
+	background-color: $creating-focus-color
+	background-image: radial-gradient(lighten($creating-focus-color, 10%),darken($creating-focus-color, 2%))
 	.main-footer
 		color: $darkgray
+
+body.creating.single
+	h1,h2,h3,h4,h5,h6
+		color: darken($creating-focus-color, 20%)
+	a
+		color: $creating-focus-color
+		&:hover
+			color: darken($creating-focus-color, 10%)
+	code
+		background: rgba($creating-focus-color, .1)
+		padding: 2px 5px
+		border-radius: 3px
+		border: 1px solid $creating-focus-color
+	blockquote
+		border-left: 3px solid $creating-focus-color
+		padding: 1rem
+		background: rgba($creating-focus-color, .1)
+		border-radius: 5px		

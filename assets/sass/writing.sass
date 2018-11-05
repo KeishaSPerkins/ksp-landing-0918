@@ -1,11 +1,32 @@
+body.writing
+	.main-header
+		background: rgba(darken($writing-focus-color, 10%), .8)
 body.writing.section
-	background-color: $purple
-	background-image: radial-gradient(lighten($purple, 10%),darken($purple, 2%))
+	background-color: $writing-focus-color
+	background-image: radial-gradient(lighten($writing-focus-color, 10%),darken($writing-focus-color, 2%))
 	.post-description
 		margin: 0
 	.read-more
 		width: 13ch
-		
+
+body.writing.single
+	h1,h2,h3,h4,h5,h6
+		color: darken($writing-focus-color, 20%)
+	a
+		color: $writing-focus-color
+		&:hover
+			color: darken($writing-focus-color, 10%)
+	code
+		background: rgba($writing-focus-color, .1)
+		padding: 2px 5px
+		border-radius: 3px
+		border: 1px solid $writing-focus-color
+	blockquote
+		border-left: 3px solid $writing-focus-color
+		padding: 1rem
+		background: rgba($writing-focus-color, .1)
+		border-radius: 5px
+
 
 	
 

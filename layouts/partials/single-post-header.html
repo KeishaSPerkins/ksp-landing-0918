@@ -5,35 +5,41 @@
 		<small class="post-subtitle">{{ .Params.subtitle }}</small>
 		{{ end }}
 	</h1>
-	<p class="post-meta">
+	<section class="post-meta">
 		{{ with .Params.authors }}
-        <ul class="authors-list">
-            {{range .}}
-                <li class="author"><a href="/authors/{{ . | urlize }}">{{ . }}</a></li>
-            {{end}}
-        </ul>
-        {{ end }} 
-    
-        &bull; 
+    <ul class="authors-list">
+      {{range .}}
+      <li class="author"><a href="/authors/{{ . | urlize }}">{{ . }}</a></li>
+      {{end}}
+    </ul>
+    {{ end }} 
 
-        <time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
-	</p>
-    <p class="post-taxonomies">
-        Category: {{ with .Params.categories }}
-    <ul class="taxonomy-list categories-list">
+    &bull; 
+
+    <time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
+    <section class="post-taxonomies">
+      {{ if isset .Params "cagtegories"}}
+      Category: {{ with .Params.categories }}
+      <ul class="taxonomy-list categories-list">
         {{range .}}
-            <li class="taxonomy-item"><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+        <li class="taxonomy-item"><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
         {{end}}
-    </ul>
-    {{ end }} 
-     Tags: {{ with .Params.tags }}
-    <ul class="taxonomy-list tags-list">
+      </ul>
+      {{ end }} 
+      {{ end }}
+
+      {{ if isset .Params "cagtegories"}}
+      Tags: {{ with .Params.tags }}
+      <ul class="taxonomy-list tags-list">
         {{range .}}
-            <li class="taxonomy-item">
-                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
-            </li>
+        <li class="taxonomy-item">
+          <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+        </li>
         {{end}}
-    </ul>
-    {{ end }} 
-    </p>
+      </ul>
+      {{ end }} 
+      {{ end }}
+    </section>
+  </section>
+
 </header>

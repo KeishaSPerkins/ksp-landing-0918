@@ -1,6 +1,9 @@
+body.teaching
+	.main-header
+		background: rgba(darken($teaching-focus-color, 10%), .8)
 body.teaching.section
-	background-color: $pink
-	background-image: radial-gradient(lighten($pink, 10%),darken($pink, 2%))
+	background-color: $teaching-focus-color
+	background-image: radial-gradient(lighten($teaching-focus-color, 10%),darken($teaching-focus-color, 2%))
 	.lesson-description
 		margin: 0
 	.lesson-asset-list
@@ -13,3 +16,23 @@ body.teaching.section
 			margin: 10px 10px 10px 0
 			padding: 0
 		.lesson-asset-link
+
+body.teaching.single
+	h1,h2,h3,h4,h5,h6
+		color: darken($teaching-focus-color, 20%)
+	a
+		color: $teaching-focus-color
+		&:hover
+			color: darken($teaching-focus-color, 10%)
+	code
+		background: rgba($teaching-focus-color, .1)
+		padding: 2px 5px
+		border-radius: 3px
+		border: 1px solid $teaching-focus-color
+	blockquote
+		border-left: 3px solid $teaching-focus-color
+		padding: 1rem
+		background: rgba($teaching-focus-color, .1)
+		border-radius: 5px
+
+

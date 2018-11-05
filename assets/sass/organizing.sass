@@ -1,3 +1,23 @@
+body.organizing
+	.main-header
+		background: rgba(darken($organizing-focus-color, 10%), .8)
 body.organizing.section
-	background-color: $blue
-	background-image: radial-gradient(lighten($blue, 10%),darken($blue, 2%))
+	background-color: $organizing-focus-color
+	background-image: radial-gradient(lighten($organizing-focus-color, 10%),darken($organizing-focus-color, 2%))
+body.organizing.single
+	h1,h2,h3,h4,h5,h6
+		color: darken($organizing-focus-color, 20%)
+	a
+		color: $organizing-focus-color
+		&:hover
+			color: darken($organizing-focus-color, 10%)
+	code
+		background: rgba($organizing-focus-color, .1)
+		padding: 2px 5px
+		border-radius: 3px
+		border: 1px solid $organizing-focus-color
+	blockquote
+		border-left: 3px solid $organizing-focus-color
+		padding: 1rem
+		background: rgba($organizing-focus-color, .1)
+		border-radius: 5px	
