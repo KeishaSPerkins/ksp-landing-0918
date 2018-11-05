@@ -17,15 +17,15 @@ body.writing.single
 		&:hover
 			color: darken($writing-focus-color, 10%)
 	code
-		background: rgba($writing-focus-color, .1)
-		padding: 2px 5px
-		border-radius: 3px
-		border: 1px solid $writing-focus-color
+		background-color: rgba($writing-focus-color, .1)
+		border-color: $writing-focus-color
 	blockquote
-		border-left: 3px solid $writing-focus-color
-		padding: 1rem
-		background: rgba($writing-focus-color, .1)
-		border-radius: 5px
+		border-color: $writing-focus-color
+		background-color: rgba($writing-focus-color, .1)
+		&:before
+			color: $writing-focus-color
+		&:after
+			color: $writing-focus-color
 
 
 	

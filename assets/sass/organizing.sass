@@ -12,12 +12,12 @@ body.organizing.single
 		&:hover
 			color: darken($organizing-focus-color, 10%)
 	code
-		background: rgba($organizing-focus-color, .1)
-		padding: 2px 5px
-		border-radius: 3px
-		border: 1px solid $organizing-focus-color
+		background-color: rgba($organizing-focus-color, .1)
+		border-color: $organizing-focus-color
 	blockquote
-		border-left: 3px solid $organizing-focus-color
-		padding: 1rem
-		background: rgba($organizing-focus-color, .1)
-		border-radius: 5px	
+		border-color: $organizing-focus-color
+		background-color: rgba($organizing-focus-color, .1)
+		&:before
+			color: $organizing-focus-color
+		&:after
+			color: $organizing-focus-color

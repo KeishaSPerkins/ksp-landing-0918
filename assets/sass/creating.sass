@@ -16,12 +16,12 @@ body.creating.single
 		&:hover
 			color: darken($creating-focus-color, 10%)
 	code
-		background: rgba($creating-focus-color, .1)
-		padding: 2px 5px
-		border-radius: 3px
-		border: 1px solid $creating-focus-color
+		background-color: rgba($creating-focus-color, .1)
+		border-color: $creating-focus-color
 	blockquote
-		border-left: 3px solid $creating-focus-color
-		padding: 1rem
-		background: rgba($creating-focus-color, .1)
-		border-radius: 5px		
+		border-color: $creating-focus-color
+		background-color: rgba($creating-focus-color, .1)
+		&:before
+			color: $creating-focus-color
+		&:after
+			color: $creating-focus-color	

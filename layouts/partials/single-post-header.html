@@ -18,7 +18,8 @@
 
     <time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
     <section class="post-taxonomies">
-      {{ if isset .Params "cagtegories"}}
+      {{ if isset .Params "categories"}}
+      <br>
       Category: {{ with .Params.categories }}
       <ul class="taxonomy-list categories-list">
         {{range .}}
@@ -27,14 +28,14 @@
       </ul>
       {{ end }} 
       {{ end }}
-
-      {{ if isset .Params "cagtegories"}}
+      
+      {{ if isset .Params "tags"}}
+      <br>
       Tags: {{ with .Params.tags }}
       <ul class="taxonomy-list tags-list">
         {{range .}}
         <li class="taxonomy-item">
-          <a href="/tags/{{ . | urlize }}">{{ . }}</a>
-        </li>
+          <a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
         {{end}}
       </ul>
       {{ end }} 

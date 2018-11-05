@@ -3,10 +3,28 @@ body.single
 	h1,h2,h3,h4,h5,h6
 		color: darken($main-focus-color, 10%)
 	blockquote
-		border-left: 3px solid $main-focus-color
+		border-left: 2px solid $main-focus-color
 		padding: 1rem
 		background: rgba($main-focus-color, .1)
 		border-radius: 5px
+		position: relative
+		quotes: "\201C""\201D""\2018""\2019"
+		font-size: 1.2rem
+		margin: 2rem 0
+		&:before
+			content: open-quote
+			font-size: 4em
+			position: absolute
+			top: -2.5rem
+			left: .5rem
+			color: $main-focus-color
+		// &:after
+		// 	content: close-quote
+		// 	font-size: 4em
+		// 	position: absolute
+		// 	bottom: -5rem
+		// 	right: .5rem
+		// 	color: $main-focus-color
 	a
 		color: $main-focus-color
 		&:hover
@@ -17,6 +35,7 @@ body.single
 		border-radius: 3px
 		border: 1px solid $main-focus-color
 	.post-header
+		margin-top: 4rem
 		.post-title
 			margin: 0 0 .5rem 0
 		.post-meta
@@ -45,6 +64,7 @@ body.single
 		padding: 0
 		list-style: none
 		display: inline
+		text-transform: capitalize
 		.taxonomy-item
 			display: inline
 			&:not(:last-child):after
