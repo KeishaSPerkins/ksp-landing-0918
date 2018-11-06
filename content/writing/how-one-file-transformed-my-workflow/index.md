@@ -73,4 +73,4 @@ The great thing about employing a Smart Object referenced on each artboard is th
 In the event that a new size is introduced, I can easily add it to the mix, knowing that as long as the center square makes it onto the artboard, all of the important information will be included. Here's an example of one design for all the use cases. I tend to export them all quickly as PNGs or PDFs once I've finalized a design. Now I'm able to deliver the moment someone asks, "Hey, could you get me that flier in a 4 x 6 PDF for print?" 
 
 
-This document has greatly improved my workflow. If you're interested in using this in your own workflow, feel free to  <a href="/../files/oneDesignManySizes.psd">click here to download the .PSD file</a>. Let me know how you like it. Got something you'd do to improve it? I'm all ears. Leave a comment below.
+This document has greatly improved my workflow. If you're interested in using this in your own workflow, feel free to  {{< resource url="oneDesignManySizes.psd" target="blank" text="click here to download the .PSD file" >}}. Let me know how you like it. Got something you'd do to improve it? I'm all ears. Leave a comment below.
