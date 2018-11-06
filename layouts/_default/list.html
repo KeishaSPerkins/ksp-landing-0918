@@ -17,7 +17,7 @@
 {{ end }}
 <section class="list-content">
 
-	{{ if eq .Type "writing" }}
+<!-- 	{{ if eq .Type "writing" }}
 		{{ $pag := (.Paginator 10) .Data.Pages }}
 		{{ range $pag.Pages }}
 			{{ partial "blog-post-card.html" .}}
@@ -31,7 +31,23 @@
 				{{ partial "talk-post-card.html" . }}
 			{{ end }}
 		{{ end }}
-	{{ end }}
+	{{ end }} -->
+
+<!-- 
+
+
+I've commented out the previous ranges that differeciated between 'teaching' and 'writing', using a section ranger and a page ranger, respectively. I may be able to use only one to range through them all, though I'd like to save them both as partials or shortcodes or something.
+
+
+
+ -->
+
+
+{{ $pag := (.Paginator 10) .Data.Pages }}
+		{{ range $pag.Pages }}
+			{{ partial "talk-post-card.html" .}}
+		{{ end }}
+
 
 	{{ if eq .Kind "taxonomy" }}
 		{{ $ts := .Paginate .Sections}}

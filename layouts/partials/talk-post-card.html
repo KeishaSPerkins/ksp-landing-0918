@@ -1,12 +1,27 @@
 <article class="card">
 	<header class="card-header">
-		<h1 class="post-title">{{ .Title }}</h1>
+		<h1 class="post-title"><a href="{{.Permalink}}">{{ .Title }}</a></h1>
 	</header>
 	<section class="card-body">
 		<span class="lesson-description">
 			{{ .Content | safeHTML }}
 		</span>
-		<ul class="lesson-asset-list">
+
+
+
+<!-- 
+
+	I've commented out the usual asset list inside of this partial in order to try to range through the page bundle with the new leaf structure. I'm thinking something like "Change the context with 'with' and then range over it..."
+
+
+
+ -->
+
+
+
+
+
+<!-- 		<ul class="lesson-asset-list">
 			{{ range .Data.Pages }}
 				{{ if isset .Params "what" }}
 					<li class="lesson-asset">
@@ -24,8 +39,7 @@
 						{{ end }}
 					</li>
 				{{ end }}
-			{{ end }}
-		</ul>
+			{{ end }}</ul> -->
 	</section>
 	<footer class="card-footer">
 		<p class="post-meta">

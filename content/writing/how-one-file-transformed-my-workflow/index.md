@@ -1,5 +1,5 @@
 ---
-title: How One PSD Transformed My Workflow
+title: How One .PSD File Transformed My Workflow
 date: 2018-04-03 02:17:22 +0000
 tags: ["design", "tips & tricks", "Photoshop", "Adobe"]
 categories: ["design"]
@@ -66,7 +66,7 @@ The result is that 16:9 artboard shaves just a bit of the red zone away while th
 The great thing about employing a Smart Object referenced on each artboard is that updates to the base artboard's Smart Object change them all. The finished artboard looks something like this. I even include an artboard with a 1600 x 800 pixel size so that the social media posts we push aren't quite so big.
 
 
-{{< image name="16_9template.png" alt="Image showing how all five necessary sizes are included automatically." caption="All five necessary sizes are included automatically." >}}
+{{< image name="sized-artboards.jpg" alt="Image showing how all five necessary sizes are included automatically." caption="All five necessary sizes are included automatically." >}}
 
 
 
