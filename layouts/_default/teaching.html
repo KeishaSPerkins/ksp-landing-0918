@@ -1,0 +1,27 @@
+{{ define "main-block"}}
+
+	<h1 class="list-page-title">
+		{{ .Title }}
+		<br>
+		<small class="subtitle">{{ .Params.subtitle }}</small>
+	</h1>
+
+
+
+<section class="list-content">
+
+		{{ if .Sections }}
+			{{ $ps := .Paginate .Sections 10}}
+			{{ range $ps.Pages }}
+				{{ if ne .Params.ignore "true" }}
+					{{ partial "post-card.html" . }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	<section class="paginator-wrapper">
+		{{ template "_internal/pagination.html" . }}
+	</section>
+
+
+</section>
+{{ end }}

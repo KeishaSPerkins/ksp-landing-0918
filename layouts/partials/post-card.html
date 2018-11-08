@@ -10,18 +10,10 @@
 
 			<section class="asset-list">
 				{{ range .Pages }}
-					<a  
-					target='
-						{{ if .Params.external }}
-							_blank
-						{{else}}
-							_self
-						{{ end }}'  
-					class="action-button asset-item" 
-					href='
-				
-						{{ .Permalink }}
-					'>{{ .Params.what}}{{if .Params.external }} &#128471;{{end}}</a>
+					<a
+					class="action-button asset-item"  
+					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }} &#128471;{{end}}</a>
 				{{ end }}
 			</section>
 			

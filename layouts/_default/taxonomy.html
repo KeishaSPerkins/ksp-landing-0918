@@ -1,0 +1,25 @@
+{{ define "main-block"}}
+
+<h1 class="list-page-title">
+	{{ if eq .Type "tags" }}Posts tagged {{ .Title }}{{ end }}
+	{{ if eq .Type "categories" }}Posts in the {{ .Title }} category  {{ end }}
+	{{ if eq .Type "authors" }}Posts written by {{ .Title }}{{ end }}
+</h1>
+
+<section class="list-content">
+
+	{{ $ts := (.Paginator 15) .Data.Pages}}
+	{{ range $ts.Pages }}
+		{{ if ne .Kind "section" }}			
+			{{ if not .Params.internal }}
+				{{ partial "taxonomy-and-term-card.html" . }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	<section class="paginator-wrapper">
+		{{ template "_internal/pagination.html" . }}
+	</section>
+
+</section>
+{{ end }}

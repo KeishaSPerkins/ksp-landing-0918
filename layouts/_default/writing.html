@@ -1,11 +1,11 @@
 {{ define "main-block"}}
-{{ if eq .Kind "section" }}
+
 	<h1 class="list-page-title">
 		{{ .Title }}
 		<br>
 		<small class="subtitle">{{ .Params.subtitle }}</small>
 	</h1>
-{{ end }}
+
 
 {{ if eq .Kind "taxonomy" }}
 	<h1 class="list-page-title">
@@ -18,9 +18,14 @@
 <section class="list-content">
 
 
-	{{ range .Pages }}
-		{{ partial "taxonomy-and-term-card.html" .}}
-	{{ end }}
+
+		{{ $pag := (.Paginator 10) .Data.Pages }}
+		{{ range $pag.Pages }}
+		  {{ if ne .Params.ignore "true" }}
+				{{ partial "post-card.html" .}}
+			{{ end }}
+		{{ end }}
+
 
 	<section class="paginator-wrapper">
 		{{ template "_internal/pagination.html" . }}

@@ -1,4 +1,0 @@
-{{ $pag := (.Paginator 10) .Data.Pages }}
-		{{ range $pag.Pages }}
-			{{ partial "blog-post-card.html" .}}
-		{{ end }}
