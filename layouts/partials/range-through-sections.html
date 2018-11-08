@@ -1,0 +1,6 @@
+{{ if .Sections }}
+			{{ $ps := .Paginate .Sections 10}}
+			{{ range $ps.Pages }}
+				{{ partial "talk-post-card.html" . }}
+			{{ end }}
+		{{ end }}

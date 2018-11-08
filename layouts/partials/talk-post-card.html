@@ -17,7 +17,9 @@
 
  -->
 
-
+{{ range .Resources }}
+				<a href="{{.Permalink}}">{{ .Params.what}}</a>
+			{{ end }}
 
 
 

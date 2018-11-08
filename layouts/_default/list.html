@@ -17,42 +17,21 @@
 {{ end }}
 <section class="list-content">
 
-<!-- 	{{ if eq .Type "writing" }}
+	{{ if ne .Kind "taxonomy" }}
 		{{ $pag := (.Paginator 10) .Data.Pages }}
 		{{ range $pag.Pages }}
-			{{ partial "blog-post-card.html" .}}
-		{{ end }}
-	{{ end }}
-
-	{{ if eq .Type "teaching" }}
-		{{ if .Sections }}
-			{{ $ps := .Paginate .Sections 10}}
-			{{ range $ps.Pages }}
-				{{ partial "talk-post-card.html" . }}
+		  {{ if ne .Params.ignore "true" }}
+				{{ partial "post-card.html" .}}
 			{{ end }}
 		{{ end }}
-	{{ end }} -->
-
-<!-- 
-
-
-I've commented out the previous ranges that differeciated between 'teaching' and 'writing', using a section ranger and a page ranger, respectively. I may be able to use only one to range through them all, though I'd like to save them both as partials or shortcodes or something.
-
-
-
- -->
-
-
-{{ $pag := (.Paginator 10) .Data.Pages }}
-		{{ range $pag.Pages }}
-			{{ partial "talk-post-card.html" .}}
-		{{ end }}
-
+	{{ end }}	
 
 	{{ if eq .Kind "taxonomy" }}
-		{{ $ts := .Paginate .Sections}}
-		{{ range .Pages }}
+		{{ $ts := (.Paginator 15) .Data.Pages}}
+		{{ range $ts.Pages }}
+			{{ if not .Params.dupe }}
 			{{ partial "taxonomy-and-term-card.html" . }}
+			{{ end }}
 		{{ end }}
 	{{ end }}
 

@@ -38,3 +38,31 @@
 			a
 				color: #888
 				color: rgba(white, .3)		
+.taxonomy
+	.paginator-wrapper
+		.pagination
+			li
+				a			
+					padding: 5px 14px
+					border-radius: 45px
+					transition: background, color .3s ease
+					color: $teal
+					font-weight: bold
+					text-decoration: none
+				&.active
+					border: 1px solid $teal
+					a
+						color: $teal
+				&:hover
+					background: $teal
+					a
+						color: white
+				&.disabled
+					a
+						color: #888
+						color: rgba($teal, .3)		
+				&.disabled:hover
+					background: none
+					a
+						color: #888
+						color: rgba($teal, .3)					

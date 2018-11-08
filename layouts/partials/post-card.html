@@ -1,0 +1,45 @@
+<article class="card">
+	<header class="card-header">
+		<h1 class="post-title">{{ .Title }}</h1>
+	</header>
+	<section class="card-body">
+		<div class="post-description">
+			{{ .Content | truncate 150 }}
+		</div>
+		{{ if eq .Type "teaching" }}
+			<section class="asset-list">
+				{{ range .Resources }}
+					<a  
+					target='
+						{{ if .Params.external }}
+							_blank
+						{{else}}
+							_self
+						{{ end }}'  
+					class="action-button asset-item" 
+					href='
+				
+						{{ .Permalink }}
+					'>{{ .Params.what}}{{if .Params.external }} &#128471;{{end}}</a>
+				{{ end }}
+			</section>
+			
+		{{ end}}
+		{{ if eq .Type "writing" }}
+				<a href="{{ .Permalink }}" class="action-button read-more">Read More »</a>
+		{{ end }}
+	</section>
+	<footer class="card-footer">
+		<p class="post-meta">
+			{{ with .Params.authors }}
+		<ul class="author-names">
+			{{ range . }}
+			<li>{{ . }}</li>
+			{{ end }}
+		</ul>
+		{{ end }}
+		&bull;
+			<time>{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
+		</p>
+	</footer>
+</article>
