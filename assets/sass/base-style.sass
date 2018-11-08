@@ -11,7 +11,7 @@ body
 	grid-template-rows: 50px 1fr 30px
 	grid-template-columns: 20px 1fr 20px
 	@media screen and (min-width: 700px)
-		grid-template-columns: 80px 1fr 80px
+		grid-template-columns: minmax(80px, 1fr) minmax(300px, 1200px) minmax(80px, 1fr)
 .main-wrapper
 	display: flex
 	align-items: center

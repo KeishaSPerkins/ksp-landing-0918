@@ -7,8 +7,9 @@
 			{{ .Content | truncate 150 }}
 		</div>
 		{{ if eq .Type "teaching" }}
+
 			<section class="asset-list">
-				{{ range .Resources }}
+				{{ range .Pages }}
 					<a  
 					target='
 						{{ if .Params.external }}

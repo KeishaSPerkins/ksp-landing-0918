@@ -1,5 +1,5 @@
 ---
-title: Activate Conference 2018
+title: "An Introduction to P5.js for Game Development"
 authors: ["Keisha S Perkins"]
 what: conference
 ---

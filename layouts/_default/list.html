@@ -17,20 +17,34 @@
 {{ end }}
 <section class="list-content">
 
-	{{ if ne .Kind "taxonomy" }}
+
+	{{ if eq .Type "writing" }}
 		{{ $pag := (.Paginator 10) .Data.Pages }}
 		{{ range $pag.Pages }}
 		  {{ if ne .Params.ignore "true" }}
 				{{ partial "post-card.html" .}}
 			{{ end }}
 		{{ end }}
-	{{ end }}	
+	{{ end }}
 
-	{{ if eq .Kind "taxonomy" }}
+
+	{{ if eq .Type "teaching" }}
+		{{ if .Sections }}
+			{{ $ps := .Paginate .Sections 10}}
+			{{ range $ps.Pages }}
+				{{ if ne .Params.ignore "true" }}
+					{{ partial "post-card.html" . }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	
+
+	{{ if eq .Kind "taxonomy" }}=
 		{{ $ts := (.Paginator 15) .Data.Pages}}
 		{{ range $ts.Pages }}
 			{{ if not .Params.dupe }}
-			{{ partial "taxonomy-and-term-card.html" . }}
+				{{ partial "taxonomy-and-term-card.html" . }}
 			{{ end }}
 		{{ end }}
 	{{ end }}

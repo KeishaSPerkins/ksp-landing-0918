@@ -1,6 +1,6 @@
 ---
 title: Up and Running With HUGO
-authors: ["Keisha S Perkins", "Joe"]
+authors: ["Keisha S Perkins"]
 what: lightning talk
 ---
 
