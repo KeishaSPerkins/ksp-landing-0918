@@ -3,7 +3,7 @@
 	target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
 	href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>
 	<h2 class="result-title">
-		<span class="what">{{ if eq .Type "writing" }}Blog Post{{end}}{{ .Params.what }}:</span> {{ .Title }}
+		<span class="what">{{ if eq .Type "writing" }}Blog Post{{ else if eq .Type "andmore" }}Community Event{{else}}{{ .Params.what }}{{end}}:</span> {{ .Title }}
 	</h2>
 	<p class="result-summary">{{.Summary | truncate 100}}</p>
 	<footer class="result-footer">

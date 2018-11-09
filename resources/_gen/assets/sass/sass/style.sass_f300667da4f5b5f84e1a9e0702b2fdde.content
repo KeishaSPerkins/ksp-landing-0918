@@ -148,9 +148,9 @@ body.creating {
   body.creating .main-footer {
     color: #333333; }
 
-body.organizing {
+body.andmore {
   background-color: #5995D1; }
-  body.organizing .main-wrapper {
+  body.andmore .main-wrapper {
     justify-content: flex-start; }
 
 body.writing {

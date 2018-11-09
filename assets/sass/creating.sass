@@ -3,21 +3,23 @@ body.creating
 		background: rgba(darken($creating-focus-color, 10%), .8)
 		#menu-toggle
 			svg
-				fill: $creating-focus-color !important
-				color: $creating-focus-color !important
-
+				fill: $darkgray !important
+			&:hover
+				svg
+					fill: $creating-focus-color !important
 body.creating.section
 	background-color: $creating-focus-color
 	background-image: radial-gradient(lighten($creating-focus-color, 10%),darken($creating-focus-color, 2%))
 	.main-footer
 		color: $darkgray
-
 body.creating.single
 	#menu-toggle
-		background: $creating-focus-color
+		background: $darkgray
 		svg
 			fill: white !important
 			color: white !important
+		&:hover
+			background: $creating-focus-color !important
 	h1,h2,h3,h4,h5,h6
 		color: darken($creating-focus-color, 20%)
 	a

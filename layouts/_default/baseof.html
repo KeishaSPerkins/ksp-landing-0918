@@ -1,6 +1,8 @@
 {{ partial "meta.html" . }}
-<body class='{{ .Type }}{{ if eq .Kind "page" }} single{{ end }}{{ if eq .Kind "section" }} section{{ end }}{{ if eq .Kind "home" }} home{{ end }}{{ if eq .Kind "taxonomy" }} taxonomy{{ end }}{{ if eq .Kind "taxonomyTerm" }} taxonomyTerm{{ end }}'>
-	{{ partial "main-header.html"}}
+<body class='{{ .Type }}{{ if eq .Kind "page" }} single{{ else if eq .Kind "section" }} section{{ else if eq .Kind "home" }} home{{ else if eq .Kind "taxonomy" }} taxonomy{{ else if eq .Kind "404" }} four-oh-four{{ else if eq .Kind "taxonomyTerm" }} taxonomyTerm{{ else }} standard{{end}}'>
+	{{ if ne .Kind "404" }}
+		{{ partial "main-header.html"}}
+	{{ end }}
 	<main class='main-wrapper'>
 		 {{ block "main-block" . }}
 		 {{end}}

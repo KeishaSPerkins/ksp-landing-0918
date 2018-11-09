@@ -10,7 +10,7 @@
 
 	{{ $ts := (.Paginator 15) .Data.Pages}}
 	{{ range $ts.Pages }}
-		{{ if ne .Kind "section" }}			
+		{{ if .IsPage }}			
 			{{ if not .Params.internal }}
 				{{ partial "taxonomy-and-term-card.html" . }}
 			{{ end }}

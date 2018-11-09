@@ -1,7 +1,7 @@
 {{ define "main-block"}}
 
 	<h1 class="list-page-title">
-		{{ .Title }}
+		{{if eq .Type "andmore"}}And More{{ else }} {{ .Title }} {{ end }}
 		<br>
 		<small class="subtitle">{{ .Params.subtitle }}</small>
 	</h1>

@@ -3,17 +3,21 @@ body.teaching
 		background: rgba(darken($teaching-focus-color, 10%), .8)
 		#menu-toggle
 			svg
-				fill: $teaching-focus-color !important
-				color: $teaching-focus-color !important
+				fill: $darkgray !important
+			&:hover
+				svg
+					fill: $teaching-focus-color !important
 body.teaching.section
 	background-color: $teaching-focus-color
 	background-image: radial-gradient(lighten($teaching-focus-color, 10%),darken($teaching-focus-color, 2%))
 body.teaching.single
 	#menu-toggle
-		background: $teaching-focus-color
+		background: $darkgray
 		svg
 			fill: white !important
 			color: white !important
+		&:hover
+			background: white
 	h1,h2,h3,h4,h5,h6
 		color: darken($teaching-focus-color, 20%)
 	a

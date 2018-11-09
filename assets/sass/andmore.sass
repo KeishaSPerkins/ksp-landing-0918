@@ -1,0 +1,36 @@
+body.andmore
+	.main-header
+		background: rgba(darken($andmore-focus-color, 10%), .8)
+		#menu-toggle
+			svg
+				fill: $darkgray !important
+			&:hover
+				svg
+					fill: $andmore-focus-color !important
+body.andmore.section
+	background-color: $andmore-focus-color
+	background-image: radial-gradient(lighten($andmore-focus-color, 10%),darken($andmore-focus-color, 2%))
+body.andmore.single
+	#menu-toggle
+		background: $darkgray
+		svg
+			fill: white !important
+			color: white !important
+		&:hover
+			background: white
+	h1,h2,h3,h4,h5,h6
+		color: darken($andmore-focus-color, 20%)
+	a
+		color: $andmore-focus-color
+		&:hover
+			color: darken($andmore-focus-color, 10%)
+	code
+		background-color: rgba($andmore-focus-color, .1)
+		border-color: $andmore-focus-color
+	blockquote
+		border-color: $andmore-focus-color
+		background-color: rgba($andmore-focus-color, .1)
+		&:before
+			color: $andmore-focus-color
+		&:after
+			color: $andmore-focus-color

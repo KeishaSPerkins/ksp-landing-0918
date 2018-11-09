@@ -3,18 +3,21 @@ body.writing
 		background: rgba(darken($writing-focus-color, 10%), .8)
 		#menu-toggle
 			svg
-				fill: $writing-focus-color !important
-				color: $writing-focus-color !important
+				fill: $darkgray !important
+			&:hover
+				svg
+					fill: $writing-focus-color !important
 body.writing.section
 	background-color: $writing-focus-color
 	background-image: radial-gradient(lighten($writing-focus-color, 10%),darken($writing-focus-color, 2%))
-
 body.writing.single
 	#menu-toggle
-		background: $writing-focus-color
+		background: $darkgray
 		svg
 			fill: white !important
 			color: white !important
+		&:hover
+			background: white !important
 	h1,h2,h3,h4,h5,h6
 		color: darken($writing-focus-color, 20%)
 	a
