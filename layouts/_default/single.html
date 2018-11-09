@@ -6,7 +6,10 @@
 		{{ .Content }}
 	</article>
 
-	{{ partial "share-buttons.html" . }}
+	
+	{{ if not .Params.noshare }}
+		{{ partial "share-buttons.html" . }}
+	{{end}}
 
 	{{ if not .Params.nodisqus }}
 		{{ template "_internal/disqus.html" . }}

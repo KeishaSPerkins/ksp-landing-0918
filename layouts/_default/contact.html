@@ -1,0 +1,12 @@
+{{ define "main-block"}}
+	<h1 class="list-page-title">
+		{{ .Title }}
+		<br>
+		<small class="subtitle">{{ .Params.subtitle }}</small>
+	</h1>
+
+<section class="list-content">
+{{ .Content }}
+
+</section>
+{{ end }}
