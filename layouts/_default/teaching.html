@@ -9,15 +9,12 @@
 
 
 <section class="list-content">
-
-		{{ if .Sections }}
-			{{ $ps := .Paginate .Sections 10}}
+			{{ $ps := .Paginate (where .Sections "Section" .Type ) 10}}
 			{{ range $ps.Pages }}
 				{{ if ne .Params.ignore "true" }}
 					{{ partial "post-card.html" . }}
 				{{ end }}
 			{{ end }}
-		{{ end }}
 	<section class="paginator-wrapper">
 		{{ template "_internal/pagination.html" . }}
 	</section>
@@ -25,3 +22,6 @@
 
 </section>
 {{ end }}
+
+
+Notice how you've changed the paginator to know exactly where it is...use this to unify list page templates

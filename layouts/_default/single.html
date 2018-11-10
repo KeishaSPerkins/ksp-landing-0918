@@ -1,18 +1,20 @@
 {{ define "main-block"}}
 
-	{{ partial "single-post-header.html" . }}
 
-	<article class="post-content">
-		{{ .Content }}
-	</article>
+		{{ partial "single-post-header.html" . }}
 
-	
-	{{ if not .Params.noshare }}
-		{{ partial "share-buttons.html" . }}
-	{{end}}
+		<article class="post-content">
+			{{ .Content }}
+		</article>
 
-	{{ if not .Params.nodisqus }}
-		{{ template "_internal/disqus.html" . }}
-	{{end}}
+		
+		{{ if not .Params.noshare }}
+			{{ partial "share-buttons.html" . }}
+		{{end}}
+
+		{{ if not .Params.nodisqus }}
+			{{ template "_internal/disqus.html" . }}
+		{{end}}
+
 
 {{end}}

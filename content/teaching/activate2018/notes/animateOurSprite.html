@@ -1,3 +1,10 @@
+---
+noshare: true
+nodisqus: true
+nometa: true
+title: Animating Our Sprite
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,7 @@
 	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.play.js"></script>
 	<script src="https://la-wit.github.io/build-an-infinite-runner/build/js/lib/p5.sound.js"></script>
 
-	<title>Remove the Path From Our Ellipse</title>
+	<title>Animate Our First Sprite</title>
 	<style>
 		canvas{
 			position: absolute;
@@ -19,17 +26,19 @@
 </head>
 <body>
 	<script>
+		var robot;
+
 		function setup() {
+			robot = createSprite(150,150,50,160);
+			robot.addAnimation("idle", "../images/Idle02.png", "../images/Idle09.png");
 			createCanvas(800, 300);
 			
+
 		}
 
 		function draw() {
-			
 			background('black');
-			ellipse(mouseX, mouseY, 50, 50);
-
-
+			drawSprites();
 		}
 
 	</script>

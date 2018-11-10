@@ -5,6 +5,7 @@
 		<small class="post-subtitle">{{ .Params.subtitle }}</small>
 		{{ end }}
 	</h1>
+  {{ if not .Params.nometa}}
 	<section class="post-meta">
 		{{ with .Params.authors }}
     <ul class="authors-list">
@@ -41,6 +42,7 @@
       {{ end }} 
       {{ end }}
     </section>
+  {{end }}
   </section>
 
 </header>

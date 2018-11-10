@@ -3,6 +3,8 @@ title: "An Introduction to P5.js for Game Development"
 date: 2018-02-24T14:07:29-05:00
 draft: false
 what: notes
+layout: single
+layout-override: true
 tags:
 - JavaScript
 - coding
@@ -55,7 +57,7 @@ function draw() {
 {{< /highlight >}}
     	
 
-[Here's the result](examples/blankcanvas)
+[Here's the result](./blankcanvas)
 
 ### Adding Some Interest
 
@@ -75,7 +77,7 @@ function draw() {
 {{< /highlight >}}
     	
 
-[Here's the result](examples/blankcanvaswithellipse)
+[Here's the result](./blankcanvaswithellipse)
 
 Though this ellipse appears to be still, it is being drawn 60 times each second. Let's add some movement so we can see why the `draw()` function is so important.
 
@@ -97,7 +99,7 @@ function draw() {
 {{< /highlight >}}
     	
 
-[Here's the result](examples/ellipsefollowsmousewithpath)
+[Here's the result](./ellipsefollowsmousewithpath)
 
 ### Get Rid of that Tail
 
@@ -119,13 +121,13 @@ function draw() {
     	
 
 
-[Here's the result](examples/ellipsefollowsmousenopath)
+[Here's the result](./ellipsefollowsmousenopath)
 
 This is just a small introduction to the library, but have a look at some of the things others have built with p5.js! Perhaps it will inspire to you build something, too.
 
 *   [Noisefactor’s Pen “Simple paint program”](https://codepen.io/noisefactor/pen/rezrQW)
 *   [Yugam’s Pen “Card’s Rotation”](https://codepen.io/pizza3/pen/rjaPNY)
-*   [P5.js Example: Reach 1](https://p5js.orgexamples/interaction-reach-1)
+*   [P5.js Example: Reach 1](https://p5js.org/interaction-reach-1)
 *   [shaggy’s Pen “Wave Gen – p5.js”](https://codepen.io/sha99y8oy/pen/KrbPzx)
 
 ## But Where Are the Games?!
@@ -160,7 +162,7 @@ function draw() {
 {{< /highlight >}}
     	
 
-[Here's the result](examples/addourfirstsprite)
+[Here's the result](./addourfirstsprite)
 
 Though it may not look like it, that rectangle has velocity, space, depth, collision, and lots of other properties already built in. It’s ready for us to start manipulating it. First, let’s add an animation to the sprite!
 
@@ -178,7 +180,7 @@ var robot;
 
 function setup() {
 	robot = createSprite(150,150,50,160);
-	robot.addAnimation("idle", "images/Idle02.png", "images/Idle09.png");
+	robot.addAnimation("idle", "../images/Idle02.png", "../images/Idle09.png");
 	createCanvas(800, 300);
 }    
 
@@ -189,7 +191,7 @@ function draw() {
 {{< /highlight >}}
     	
 
-[Here's the result](examples/animateoursprite)
+[Here's the result](./animateoursprite)
 
 And there she is! Our little robot!
 
@@ -206,8 +208,8 @@ var robot;
 
 function setup() {
 	robot = createSprite(150,150,50,160);
-	robot.addAnimation("idle", "images/idle01.png", "images/idle09.png");
-	robot.addAnimation("jump", "images/jump01.png", "images/jump10.png");
+	robot.addAnimation("idle", "../images/Idle01.png", "../images/Idle09.png");
+	robot.addAnimation("run", "images/Run01.png", "images/Run08.png");
 	createCanvas(800, 300);			
 }
 
@@ -215,18 +217,20 @@ function setup() {
 function draw() {
 	background('black');			
 	if(keyIsDown(32)){
-		robot.changeAnimation("jump");
+		robot.changeAnimation("run");
+		robot.velocity.x = 1;
 	} else if(!keyIsDown(32)) {
 		robot.changeAnimation("idle");
+		robot.velocity.x = 0;
 	}
 	drawSprites();
 }
 {{< /highlight >}}
     	
 
-[Here's the result](examples/keypressspriteaction)
+[Here's the result](./keypressspriteaction)
 
-Using functions like the ones we’ve used above, we can make games that are simple and fun to play. [This game](examples/gameexamplesilent) was built with less than 200 lines of code using these libraries.
+Using functions like the ones we’ve used above, we can make games that are simple and fun to play. [This game](./gameexamplesilent) was built with less than 200 lines of code using these libraries.
 
 **Note:** A great little resource I like to use is [Keycode.info](http://keycode.info) by Wes Bos. This nifty little website gives you keycodes for the keys on your keyboard. It's very helpful when writing in keyboard event handlers.
 
@@ -258,7 +262,7 @@ function setup(){
 {{< /highlight >}}
     	
 
-[Here's the result](examples/gameexample)
+[Here's the result](./gameexample)
 
 The `preload()` function allows us to load all of our assets before the program begins. This is very useful for when we have large files or have many files to load. In the `preload()` function, we will load our sound to a variable called “gameMusic”. At the start of the `setup()` function, we can play the song.
 
@@ -284,8 +288,8 @@ Here is a list of resources that may help you in creating games.
 *   [CodePen](https://codepen.io)
 *   [Free Sound](http://freesound.org)
 
-The [slides for this talk](../activate-2018-slides) are also available. If you like that robot game. You can see how it's built on [its accompanying tutorial site](https://la-wit.github.io/build-an-infinite-runner). 
+The [slides for this talk](../slides) are also available. If you like that robot game. You can see how it's built on [its accompanying tutorial site](https://la-wit.github.io/build-an-infinite-runner). 
 
-If you'd like to jump right into making with p5.js, you can fork this pen start right away. The pen already has p5.js, p5.play, p5.sound, and another extender library, [p5.dom](https://p5js.org/reference/#/libraries/p5.dom) linked.
+If you'd like to jump right into making with p5.js, you can fork [this pen](https://codepen.io/KeishaSPerkins/pen/eQdzJb) start right away. The pen already has p5.js, p5.play, p5.sound, and another extender library, [p5.dom](https://p5js.org/reference/#/libraries/p5.dom) linked.
 
 Have fun!
