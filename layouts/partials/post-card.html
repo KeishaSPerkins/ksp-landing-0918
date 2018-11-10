@@ -13,7 +13,13 @@
 					<a
 					class="action-button asset-item"  
 					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
-					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }} &#128471;{{end}}</a>
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
+				{{ end }}
+				{{ range .Sections }}
+					<a
+					class="action-button asset-item"  
+					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
 				{{ end }}
 			</section>
 			
