@@ -1,0 +1,57 @@
+// Root Theme Styles
+=colorThemeRoot($focus-color)
+	#menu-toggle
+		svg
+			fill: $darkgray !important
+		&:hover
+			svg
+				fill: darken($focus-color, 10%) !important
+
+// Theme Styles for Section Pages
+=colorThemeSection($focus-color)
+	background-color: $focus-color
+	background-image: radial-gradient(lighten($focus-color, 10%),darken($focus-color, 2%))
+	#menu-toggle
+		@media screen and ($medium-screens)
+			svg
+				fill: white !important
+				&:hover					
+
+
+// Theme Styles for Single Pages
+=colorThemeSingle($focus-color)	
+	.main-header
+		background: darken($focus-color, 10%)
+		#menu-toggle
+			background: $darkgray
+			svg
+				fill: white !important
+				color: white !important
+			&:hover
+				background: darken($focus-color, 10%) !important
+			@media screen and ($medium-screens)
+				background: none
+				&:hover
+					background: none !important
+				svg
+					fill: white !important
+	h1,h2,h3,h4,h5,h6
+		color: darken($focus-color, 20%)
+	a
+		color: $focus-color
+		&:hover
+			color: darken($focus-color, 10%)
+	code
+		background-color: rgba($focus-color, .1)
+		border-color: $focus-color
+	blockquote
+		border-color: $focus-color
+		background-color: rgba($focus-color, .1)
+		&:before
+			color: $focus-color
+		&:after
+			color: $focus-color
+
+
+
+

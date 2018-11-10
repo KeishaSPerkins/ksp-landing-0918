@@ -1,39 +1,6 @@
 body.teaching
-	
-		#menu-toggle
-			svg
-				fill: $darkgray !important
-			&:hover
-				svg
-					fill: $teaching-focus-color !important
+	+colorThemeRoot($teaching-focus-color)
 body.teaching.section
-	background-color: $teaching-focus-color
-	background-image: radial-gradient(lighten($teaching-focus-color, 12%),darken($teaching-focus-color, 2%))
+	+colorThemeSection($teaching-focus-color)
 body.teaching.single
-	.main-header
-		background: rgba(darken($teaching-focus-color, 10%), .8)
-	#menu-toggle
-		background: $darkgray
-		svg
-			fill: white !important
-			color: white !important
-		&:hover
-			background: white
-	h1,h2,h3,h4,h5,h6
-		color: darken($teaching-focus-color, 20%)
-	a
-		color: $teaching-focus-color
-		&:hover
-			color: darken($teaching-focus-color, 10%)
-	code
-		background-color: rgba($teaching-focus-color, .1)
-		border-color: $teaching-focus-color
-	blockquote
-		border-color: $teaching-focus-color
-		background-color: rgba($teaching-focus-color, .1)
-		&:before
-			color: $teaching-focus-color
-		&:after
-			color: $teaching-focus-color
-
-
+	+colorThemeSingle($teaching-focus-color)

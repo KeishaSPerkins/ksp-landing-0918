@@ -4,13 +4,14 @@ html
 	color: $darkgray
 body
 	padding: 0
+	height: 100%
 	min-height: 100vh
 	background-repeat: no-repeat
 	margin: 0
 	display: grid
 	grid-template-rows: 50px 1fr 30px
 	grid-template-columns: 20px 1fr 20px
-	@media screen and (min-width: 700px)
+	@media screen and ($medium-small-screens)
 		grid-template-columns: minmax(80px, 1fr) minmax(300px, 1200px) minmax(80px, 1fr)
 .main-wrapper
 	display: flex

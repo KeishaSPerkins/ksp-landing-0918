@@ -1,5 +1,4 @@
 body.home
-	height: 100vh
 	background-color: $teal
 	background-image: radial-gradient(lighten($teal, 10%),darken($teal, 2%))
 	.main-wrapper
@@ -14,7 +13,7 @@ body.home
 		margin: 3px auto
 		position: relative
 		box-sizing: border-box
-		@media screen and (min-width: 700px)
+		@media screen and ($medium-small-screens)
 			font-size: 3rem	
 		.bio-activity-link
 			color: white

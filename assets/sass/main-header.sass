@@ -4,18 +4,14 @@
 	display: flex
 	align-items: center
 	justify-content: flex-end
-	@media screen and (min-width: 930px)
-		background: rgba(black, .2)
-	@media screen and (min-width: 800px)
+	@media screen and ($medium-screens)
 		justify-content: flex-start
 	#logo
 		height: 100%
 		display: flex
 		justify-content: flex-start
 		align-items: center
-		float: right
-		@media screen and (min-width: 930px)
-			// align-self: flex-start
+			
 		a
 			transition: border .2s ease-in-out
 			margin: 0 15px
@@ -45,11 +41,11 @@
 			fill: $darkgray !important
 			width: 1.5rem		
 			opacity: 100% 
-			transition: fill .3s ease
+			transition: fill .3s ease, height .3s ease, width .3s ease
 		&:hover
 			svg
 				fill: $main-focus-color !important
-		@media screen and (min-width: 800px)
+		@media screen and ($medium-screens)
 			top: 0
 			right: 0
 			background: none
@@ -60,7 +56,10 @@
 				background: none
 				svg
 					fill: $darkgray !important
-		@media screen and (min-width: 930px)
+					height: 1.75rem
+					width: 1.75rem
+			
+		@media screen and ($large-screens)
 			display: none	
 	#main-mini-menu
 		position: fixed
@@ -97,7 +96,7 @@
 			bottom: 0
 			left: 0
 			height: 100%
-		@media screen and (min-width: 930px)
+		@media screen and ($large-screens)
 			display: none
 	#main-max-menu
 		width: 100%
@@ -122,5 +121,5 @@
 				&:hover
 					border-color: white
 		display: none
-		@media screen and (min-width: 930px)
+		@media screen and ($large-screens)
 			display: initial

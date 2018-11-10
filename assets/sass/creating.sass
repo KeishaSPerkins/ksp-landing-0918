@@ -1,39 +1,6 @@
 body.creating
-	
-		#menu-toggle
-			svg
-				fill: $darkgray !important
-			&:hover
-				svg
-					fill: $creating-focus-color !important
+	+colorThemeRoot($creating-focus-color)
 body.creating.section
-	background-color: $creating-focus-color
-	background-image: radial-gradient(lighten($creating-focus-color, 10%),darken($creating-focus-color, 2%))
-	.main-footer
-		color: $darkgray
+	+colorThemeSection($creating-focus-color)
 body.creating.single
-	.main-header
-		background: rgba(darken($creating-focus-color, 10%), .8)
-	#menu-toggle
-		background: $darkgray
-		svg
-			fill: white !important
-			color: white !important
-		&:hover
-			background: $creating-focus-color !important
-	h1,h2,h3,h4,h5,h6
-		color: darken($creating-focus-color, 20%)
-	a
-		color: $creating-focus-color
-		&:hover
-			color: darken($creating-focus-color, 10%)
-	code
-		background-color: rgba($creating-focus-color, .1)
-		border-color: $creating-focus-color
-	blockquote
-		border-color: $creating-focus-color
-		background-color: rgba($creating-focus-color, .1)
-		&:before
-			color: $creating-focus-color
-		&:after
-			color: $creating-focus-color	
+	+colorThemeSingle($creating-focus-color)

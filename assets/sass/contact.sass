@@ -1,20 +1,12 @@
 body.contact	
-		#menu-toggle
-			svg
-				fill: $darkgray !important
-			&:hover
-				svg
-					fill: $contact-focus-color !important
+	+colorThemeRoot($contact-focus-color)
 body.contact.section
-	background-color: $contact-focus-color
-	background-image: radial-gradient(lighten($contact-focus-color, 10%),darken($contact-focus-color, 2%))
+	+colorThemeSection($contact-focus-color)
 	.list-content
 		align-items: center
 		margin: 0
 		height: 100%
 		grid-template-columns: 1fr
-		@media screen and (min-width: 700px)
-			grid-template-columns: 1fr
 	.main-footer
 		color: $darkgray
 	.contact-blurb
@@ -25,7 +17,7 @@ body.contact.section
 		margin: 0 auto
 		position: relative
 		box-sizing: border-box
-		@media screen and (min-width: 700px)
+		@media screen and ($medium-small-screens)
 			font-size: 3rem	
 		.social-contact-link
 			color: white
@@ -36,29 +28,5 @@ body.contact.section
 				border-bottom-color: white
 		
 
-body.contact.single
-	.main-header
-		background: rgba(darken($contact-focus-color, 10%), .8)
-	#menu-toggle
-		background: $darkgray
-		svg
-			fill: white !important
-			color: white !important
-		&:hover
-			background: $contact-focus-color !important
-	h1,h2,h3,h4,h5,h6
-		color: darken($contact-focus-color, 20%)
-	a
-		color: $contact-focus-color
-		&:hover
-			color: darken($contact-focus-color, 10%)
-	code
-		background-color: rgba($contact-focus-color, .1)
-		border-color: $contact-focus-color
-	blockquote
-		border-color: $contact-focus-color
-		background-color: rgba($contact-focus-color, .1)
-		&:before
-			color: $contact-focus-color
-		&:after
-			color: $contact-focus-color	
+
+
