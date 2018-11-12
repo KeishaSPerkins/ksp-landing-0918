@@ -6,8 +6,7 @@
 		<div class="post-description">
 			{{ .Content | truncate 150 }}
 		</div>
-		{{ if eq .Type "teaching" }}
-
+		{{ if eq .Kind "section" }}
 			<section class="asset-list">
 				{{ range .Pages }}
 					<a
@@ -23,9 +22,20 @@
 				{{ end }}
 			</section>
 			
-		{{ end}}
-		{{ if eq .Type "writing" }}
+		{{ else if eq .Kind "page" }}
+		<section class="asset-list">
+			{{ if eq .Type "writing" }}
 				<a href="{{ .Permalink }}" class="action-button read-more">Read More »</a>
+			{{ else if eq .Type "teaching" }}
+				{{ range .Resources}}
+					<a
+					class="action-button asset-item"  
+					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
+				{{ end }}
+		</section>
+		{{ end}}
+				
 		{{ end }}
 	</section>
 	<footer class="card-footer">

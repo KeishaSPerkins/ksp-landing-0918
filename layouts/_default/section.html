@@ -9,9 +9,13 @@
 <section class="list-content">
 
 
-	{{ range .Pages }}
-		{{ partial "post-card.html" .}}
-	{{ end }}
+	{{ $ss := append .CurrentSection.Pages .CurrentSection.Sections}}
+	{{ $pag := .Paginate $ss 10}}
+			{{ range $pag.Pages.ByDate.Reverse }}
+				{{ if not .Params.ignore }}
+					{{ partial "post-card.html" . }}
+				{{ end }}
+			{{ end }}
 
 	<section class="paginator-wrapper">
 		{{ template "_internal/pagination.html" . }}
