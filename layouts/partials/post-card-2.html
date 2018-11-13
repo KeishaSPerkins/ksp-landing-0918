@@ -1,0 +1,19 @@
+<article class="cards">
+	<figure class="card-image-wrapper">
+		<img src='{{ range first 1 (after 1 (.Resources.ByType "image")) }}{{.Permalink}}{{end}}' alt="" class="card-image">
+	</figure>
+	<section class="post-info">
+		<h1 class="post-title">
+			{{ .Title }}
+		</h1>
+		<section class="post-meta">
+			<ul class="authors">
+				{{range .Params.authors}}
+					<li class="author">{{.}}</li>
+				{{end}}
+			</ul>
+			
+			{{ dateFormat (default "Jan 2, 2006" .Site.Params.dateFormat) .Date }}
+		</section>
+	</section>
+</article>
