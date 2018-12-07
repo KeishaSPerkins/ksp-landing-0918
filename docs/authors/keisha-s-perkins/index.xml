@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keisha S Perkins</title>
+    <link>https://keishasperkins.com/authors/keisha-s-perkins/</link>
+    <description>Recent content on Keisha S Perkins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Oct 2018 11:08:21 -0600</lastBuildDate>
+    
+	<atom:link href="https://keishasperkins.com/authors/keisha-s-perkins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Up and Running With HUGO</title>
+      <link>https://keishasperkins.com/teaching/upandrunningwithhugo/</link>
+      <pubDate>Wed, 24 Oct 2018 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/upandrunningwithhugo/</guid>
+      <description>I spoke at Baton Rouge Hack Night about my favorite static site generator, HUGO.</description>
+    </item>
+    
+    <item>
+      <title>How One .PSD Transformed My Design Workflow</title>
+      <link>https://keishasperkins.com/teaching/onefiletransformedworkflow/</link>
+      <pubDate>Tue, 09 Oct 2018 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/onefiletransformedworkflow/</guid>
+      <description>At the first Open Mic Tech, I spoke about how I changed my design workflow with single file. The talk is based on a blog post I wrote previously and thought would be a good talk.</description>
+    </item>
+    
+    <item>
+      <title>How One .PSD File Transformed My Workflow</title>
+      <link>https://keishasperkins.com/writing/how-one-file-transformed-my-workflow/</link>
+      <pubDate>Tue, 03 Apr 2018 02:17:22 +0000</pubDate>
+      
+      <guid>https://keishasperkins.com/writing/how-one-file-transformed-my-workflow/</guid>
+      <description>I create a good deal of media for my church, and sometimes that media needs to be used in many ways. Perhaps the event flier that I create for a pre-service loop of slides needs to also be made to fit social media, or be printed and handed out.
+Up until recently I solved this issue by first designing something for the church&amp;rsquo;s presentation screen at a 16:9 ratio, then resizing and tweaking the design to meet whatever other needs where given to me.</description>
+    </item>
+    
+    <item>
+      <title>The Powerful Illustrator Shape Builder Tool</title>
+      <link>https://keishasperkins.com/writing/the-powerful-shape-builder-tool/</link>
+      <pubDate>Mon, 02 Apr 2018 10:34:10 -0500</pubDate>
+      
+      <guid>https://keishasperkins.com/writing/the-powerful-shape-builder-tool/</guid>
+      <description>When I began to foray into Adobe&amp;rsquo;s Creative Suite, I was using Photoshop for everything. Need a logo for lots of uses? Just deliver a huge PNG! Want to draw a nice crisp illustration? Photoshop&amp;rsquo;s pen tool works just fine for that, right?
+Photoshop was my one-stop for everything I needed, though none of what I needed was what Photoshop was created for. It was some time before I even considered using any of Adobe&amp;rsquo;s many great pieces of software that actually suited my needs, like Illustrator.</description>
+    </item>
+    
+    <item>
+      <title>Top Five Sources for Free Assets</title>
+      <link>https://keishasperkins.com/writing/top-five-freebie-resources/</link>
+      <pubDate>Sun, 18 Mar 2018 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/writing/top-five-freebie-resources/</guid>
+      <description>I think it&amp;rsquo;s fair to say that all of us have at one time or another needed to get a job done on a small&amp;ndash;or sometimes non-existent&amp;ndash;budget. At times like these, we scour the web for quality free and cheap design assets. This post will share my favorite sources for free assets. They&amp;rsquo;re in no particular order, but I think they&amp;rsquo;re all pretty cool.
+Pexels: Free Stock Photos and Video Pexels</description>
+    </item>
+    
+    <item>
+      <title>Welcome to KayEssPea Blog!</title>
+      <link>https://keishasperkins.com/writing/welcome-to-kayesspea-blog/</link>
+      <pubDate>Tue, 27 Feb 2018 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/writing/welcome-to-kayesspea-blog/</guid>
+      <description>Hello, and welcome to my new blog! I decided that I wanted a blog, and so here it is. This will predominantly be a design and web development blog. I love to teach, and I like to write. So, I figured there&amp;rsquo;d be no better place to write the things I want to teach!</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to P5.js for Game Development</title>
+      <link>https://keishasperkins.com/teaching/activate2018/notes/</link>
+      <pubDate>Sat, 24 Feb 2018 14:07:29 -0500</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/activate2018/notes/</guid>
+      <description>This talk is about using JavaScript to create games on the HTML5 canvas. Though you won’t create the next Halo, you’ll learn so much about JavaScript and programming as a whole when you create games with it. In this talk, I’ll introduce you to a library that’s perfect for beginners and “non-coders” alike called p5.js.
+Why JavaScript? JavaScript is everywhere. If you use the internet, you’ve almost certainly encountered JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to P5.js for Game Development</title>
+      <link>https://keishasperkins.com/teaching/activate2018/</link>
+      <pubDate>Sat, 24 Feb 2018 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/activate2018/</guid>
+      <description>I spoke and gave a workshop on p5.js for Activate Conference 2018. Here you&#39;ll find the notes and slide for the talk I gave. The talk introduces p5.js as a means for game creation and JavaScript introduction.</description>
+    </item>
+    
+    <item>
+      <title>IT Girls: Build a JavaScript Infinite Runner</title>
+      <link>https://keishasperkins.com/teaching/itgirls/</link>
+      <pubDate>Wed, 08 Mar 2017 11:08:21 -0600</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/itgirls/</guid>
+      <description>I developed this workshop for La-WIT annual IT Girls program. The workshop was meant to introduce area middle school girls to JavaScript using the p5.js library.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to P5.js for Game Development</title>
+      <link>https://keishasperkins.com/teaching/activate2018/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/activate2018/slides/</guid>
+      <description>Here are the slides to a talk I did in February of 2018 called &#34;Using JavaScript Libraries for Game Development: An Introduction to P5.js&#34;. The talk is meant to show how the p5.js library can be used as a tool for learning JavaScript while having fun making games. The notes to this talk are also available.
+ </description>
+    </item>
+    
+    <item>
+      <title>How One .PSD File Transformed My Workflow</title>
+      <link>https://keishasperkins.com/teaching/onefiletransformedworkflow/blog-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/onefiletransformedworkflow/blog-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How One .PSD File Transformed My Workflow</title>
+      <link>https://keishasperkins.com/teaching/onefiletransformedworkflow/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/onefiletransformedworkflow/slides/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Up and Running With HUGO</title>
+      <link>https://keishasperkins.com/teaching/upandrunningwithhugo/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keishasperkins.com/teaching/upandrunningwithhugo/slides/</guid>
+      <description>Hugo is a great static site generator that&#39;s super fast and lightweight. This talk demos the steps for getting a site up and running, adding a few posts, and choosing a theme. I really recommend digging into the HUGO docs as well as the HUGO Community Forum for more in-depth explanations of how to use HUGO for your own site.
+There&#39;s also a great HUGO Tutorial Playlist by Mike Dane of the Giraffe Academy YouTube channel.</description>
+    </item>
+    
+  </channel>
+</rss>

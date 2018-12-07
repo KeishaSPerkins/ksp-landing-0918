@@ -1,7 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://keishasperkins.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Keisha S Perkins"
 disqusShortname = "keishasperkins"
+publishDir = "docs"
 
 
 [taxonomies]
