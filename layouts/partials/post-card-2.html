@@ -1,15 +1,15 @@
 <article class="cards">
 	<figure class="card-image-wrapper">
-		<img src='{{ range first 1 (after 1 (.Resources.ByType "image")) }}{{.Permalink}}{{end}}' alt="" class="card-image">
+		<img src='{{ range first 1 (after 1 (.Resources.ByType "image")) }}{{.Permalink}}{{end}}' alt="{{.Title}}" class="card-image">
 	</figure>
 	<section class="post-info">
 		<h1 class="post-title">
-			{{ .Title }}
+			<a href="{{.Permalink}}">{{ .Title }}</a>
 		</h1>
 		<section class="post-meta">
 			<ul class="authors">
-				{{range .Params.authors}}
-					<li class="author">{{.}}</li>
+				{{range .Params.authors }}
+					<li class="author"><a href="{{ . | relURL }}">{{.}}</a></li>
 				{{end}}
 			</ul>
 			

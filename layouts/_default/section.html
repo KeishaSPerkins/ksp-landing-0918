@@ -13,7 +13,7 @@
 	{{ $pag := .Paginate $ss 10}}
 			{{ range $pag.Pages.ByDate.Reverse }}
 				{{ if not .Params.ignore }}
-					{{ partial "post-card-2.html" . }}
+					{{ partial "post-card.html" . }}
 				{{ end }}
 			{{ end }}
 

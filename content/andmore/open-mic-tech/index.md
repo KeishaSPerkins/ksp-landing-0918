@@ -6,9 +6,10 @@ authors: ["Keisha S Perkins"]
 
 ---
 
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis asperiores, dolores tempore quibusdam cupiditate hic error facilis, rerum quae illum eveniet vel omnis magnam. Modi ab, ratione fuga deleniti repellendus.</div>
-<div>Modi tempora iure a sit quis quidem eaque, iste quia omnis molestiae repudiandae maxime earum sapiente assumenda non odit! Odit quos sint excepturi in. Vel rerum, exercitationem in aut nostrum.</div>
-<div>Quos nesciunt unde quasi maxime tenetur molestiae, nihil! Minima ut magni voluptatum ullam cupiditate nemo molestiae non harum quas! Provident expedita ipsa enim nam officia nobis vel maiores accusamus explicabo?</div>
-<div>Cum a vel maiores nostrum non atque tempora molestias, exercitationem veritatis aut, illo ut corporis earum dolorum! Accusantium nam, saepe quia, doloremque sequi quidem perspiciatis neque, optio, aliquid libero voluptatum.</div>
-<div>Tempora nihil ad, aspernatur est nemo ea, dicta voluptas laboriosam dolorem similique saepe cupiditate vel ratione autem minus excepturi deleniti perferendis aut sunt unde. Quaerat sint, quod expedita quo a.</div>
-<div>Ullam accusamus eligendi libero, doloribus nobis. Iusto nulla molestias distinctio voluptas beatae eligendi dolore ea illum expedita, laudantium voluptatum ratione voluptatem fugiat vitae quis officia facere. Culpa laborum, quisquam repellendus.</div>
+Keisha is the creator of <a target="_blank" href="https://www.openmictech.com/">Open Mic Tech</a>, a quarterly community-driven event designed to facilitate communication among professionals, students, and hobbyists in tech-related fields. OMT is a place for people to come together and talk about the stuff they're working on. Just as the name suggests, it's an open mic night geared toward technology.
+
+At each event, members of the community are invited to share, through 5-15 minute lightning talks, some way that they're using technology. These talks aren't just for coders, but for anyone that uses tech in their lives.
+
+{{< image name="everyoneSittingFullColor.jpg" alt="Image the first Open Mic Tech" caption="OMT is a very open and informal environment for sharing ideas." >}}
+
+Each event happens the second Tuesday of every quarter at the Goodwood Library and is free an open to the public. If the event interests you, consider coming to talk or to listen!

@@ -3,6 +3,10 @@
 	padding-bottom: 50%
 	overflow: hidden
 	border-radius: 5px
+	background: rgba(black, .5)
+	margin: 10px
+	position: relative
+	width: 100%
 	.card-image-wrapper
 		width: 100%
 		margin: 0
@@ -10,9 +14,37 @@
 			width: 100%
 			object-fit: cover
 	.post-info
+		color: white
+		text-shadow: 1px 2px 3px black
+		text-shadow: 1px 2px 3px rgba(black, .8)
 		width: 100%
-		padding: .5rem
+		padding: .5rem .5rem .5rem 1rem
+		text-align: left
+		margin: auto
+		position: absolute
+		z-index: 2
+		top: 0
+		background: rgba(black, .25)
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		transition: background-color .3s ease-in-out
+		a 
+			color: white
+			text-decoration: none
+			transition: underline .3s ease
+			&:hover
+				text-decoration: underline
+		&:hover
+			background: rgba(black, .7)
+	.post-title
+		width: 90%
+		margin: 0
+
 	.post-meta
+		width: 90%
+		font-size: .8rem
 		.authors
 			list-style: none
 			padding: 0
@@ -20,4 +52,5 @@
 			display: flex
 			.author
 				&:not(:last-child):after
-					content: ","	
+					content: ", "	
+					margin-right: .6ch

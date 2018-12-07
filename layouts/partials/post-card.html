@@ -2,7 +2,11 @@
 	<header class="card-header">
 		<h1 class="post-title">{{ .Title }}</h1>
 	</header>
+	<figure class="card-image-wrapper">
+			<img src='{{ range first 1 (after 1 (.Resources.ByType "image")) }}{{.Permalink}}{{end}}' alt="" class="card-image">
+		</figure>
 	<section class="card-body">
+		
 		<div class="post-description">
 			{{ .Content | truncate 150 }}
 		</div>
@@ -12,32 +16,40 @@
 					<a
 					class="action-button asset-item"  
 					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
-					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<span class="new-window-icon"> 
+						<svg>
+							<use href="#window" />
+						</svg>
+					</span> {{end}}</a>
 				{{ end }}
 				{{ range .Sections }}
 					<a
 					class="action-button asset-item"  
 					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
-					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<span class="new-window-icon"><svg><use href="#window" /></svg></span> {{end}}</a>
 				{{ end }}
 			</section>
 			
 		{{ else if eq .Kind "page" }}
 		<section class="asset-list">
 			{{ if eq .Type "writing" }}
-				<a href="{{ .Permalink }}" class="action-button read-more">Read More »</a>
+				<a href="{{ .Permalink }}" class="action-button read-more">Read More&nbsp;&nbsp;» </a>
+			{{ else if eq .Type "andmore" }}	
+				<a href="{{ .Permalink }}" class="action-button read-more">Read More&nbsp;&nbsp;» </a>	
 			{{ else if eq .Type "teaching" }}
 				{{ range .Resources}}
 					<a
 					class="action-button asset-item"  
 					target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
-					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<snan class="new-window-icon"> <svg><use href="#window" /></svg></snan> {{end}}</a>
+					href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Params.what}}{{if .Params.external }}<span class="new-window-icon"> <svg><use href="#window" /></svg></span> {{end}}</a>
 				{{ end }}
+				{{ end}}
 		</section>
-		{{ end}}
+		
 				
 		{{ end }}
 	</section>
+
 	<footer class="card-footer">
 		<p class="post-meta">
 			{{ with .Params.authors }}
