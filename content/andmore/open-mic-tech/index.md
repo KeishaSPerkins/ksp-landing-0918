@@ -1,7 +1,7 @@
 ---
 title: "Open Mic Tech"
 date: 2018-11-08T14:09:29-06:00
-draft: true
+draft: false
 authors: ["Keisha S Perkins"]
 
 ---
