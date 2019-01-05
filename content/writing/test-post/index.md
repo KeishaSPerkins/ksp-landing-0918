@@ -1,8 +1,9 @@
 ---
-title: "Test Post"
-date: 2018-11-05T10:35:44-06:00
+title: "Test Post
+"
+date: 2018-01-05
 draft: true
-authors: ["Keisha S Perkins", "Joe"]
+authors: ["Keisha S Perkins"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quidem aliquam sed maiores deleniti eveniet blanditiis molestias sunt est quaerat assumenda officia ipsam sequi facere quas vero tenetur recusandae, dolore sint dolores, eum culpa corporis. Possimus repellat veritatis officia doloremque, repellendus, id necessitatibus blanditiis, minus exercitationem ratione cum sint corrupti!
