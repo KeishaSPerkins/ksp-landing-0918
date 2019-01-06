@@ -12,7 +12,7 @@ We're in the age of STEM right now and everyone is screaming that "Everyone shou
 
 ## Should You Learn to Code? _...Maybe_
 
-Coding is not programming, even though people often think of programming and coding as being one and the same. Coding is just one means by which we program. There are plenty of programming languages out there, however learning any one of them will not teach you how to think like a programmer anymore than learning how to use a screwdriver teaches you how to fix a dryer.
+Coding is not programming, even though people often think of programming and coding as being one and the same. Coding is just one means by which we program. There are plenty of programming languages out there, however learning any one of them will not teach you how to think like a programmer anymore than learning how to use a screwdriver teaches you how to fix a dryer. 
 
 ## Should You Learn to Program? _Definitely!_
 
