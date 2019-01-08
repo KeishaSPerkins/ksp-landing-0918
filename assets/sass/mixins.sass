@@ -11,17 +11,41 @@
 =colorThemeSection($focus-color)
 	background-color: $focus-color
 	background-image: radial-gradient(lighten($focus-color, 10%),darken($focus-color, 2%))
+	.card 
+		.card-header
+			a
+				text-decoration: none 
+			.post-title
+				a
+					transition: color .3s ease-in-out
+					color: darken($focus-color, 30%)
+					&:hover
+						color: darken($focus-color, 10%)
+		.card-body
+			.post-description
+				p
+					a
+						color: darken($focus-color, 15%)
+						transition: color .3s ease-in-out
+						&:hover
+							color: $focus-color
+		a.action-button
+			color: $darkgray
+			&:hover
+				background: $focus-color
+				border-color: $focus-color
+				color: white
 	#menu-toggle
 		@media screen and ($medium-screens)
 			svg
-				fill: white !important
-				&:hover					
+				fill: white !important				
 
 
 // Theme Styles for Single Pages
 =colorThemeSingle($focus-color)	
 	.main-header
 		background: darken($focus-color, 10%)
+		
 		#menu-toggle
 			background: $darkgray
 			svg

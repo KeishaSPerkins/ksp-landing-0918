@@ -1,10 +1,13 @@
 <article class="card">
-	<header class="card-header">
-		<h1 class="post-title">{{ .Title }}</h1>
-	</header>
+	
 	<figure class="card-image-wrapper">
 			<img src='{{ range first 1 (after 1 (.Resources.ByType "image")) }}{{.Permalink}}{{end}}' alt="" class="card-image">
 		</figure>
+		<header class="card-header">
+		
+						<h1 class="post-title"><a target='{{ if .Params.external }}_blank{{else}}_self{{ end }}'  
+			 href='{{ if .Params.external }}	{{ .Params.external }}{{ else if .Params.internal}}	{{ .Params.internal }}{{ else }}	{{ .Permalink }}{{ end }}'>{{ .Title }}</a></h1>
+	</header>
 	<section class="card-body">
 		
 		<div class="post-description">
