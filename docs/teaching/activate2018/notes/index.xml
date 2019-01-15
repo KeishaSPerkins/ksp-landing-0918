@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/blankcanvas/</guid>
-      <description>Creat a Blank Canvascanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}function setup() {createCanvas(800, 300);background(&#39;black&#39;);}function draw() {}</description>
+      <description>     Creat a Blank Canvas  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     function setup() { createCanvas(800, 300); background(&#39;black&#39;); } function draw() { }   </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/blankcanvaswithellipse/</guid>
-      <description>Add an Ellipse To Our Canvascanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}function setup() {createCanvas(800, 300);background(&#39;black&#39;);}function draw() {ellipse(80,50,20,60)}</description>
+      <description>     Add an Ellipse To Our Canvas  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     function setup() { createCanvas(800, 300); background(&#39;black&#39;); } function draw() { ellipse(80,50,20,60) }   </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/keypressspriteaction/</guid>
-      <description>Key Press Jumpcanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}console.log(&#34;Yo!&#34;)function setup() {robot = createSprite(150,150,50,160);robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;);robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;);createCanvas(800, 300);}function draw() {background(&#39;black&#39;);if(keyIsDown(39)){console.log(&#34;ddddd&#34;)robot.changeAnimation(&#34;run&#34;);robot.velocity.x = 1;} else if(!keyIsDown(39)) {robot.changeAnimation(&#34;idle&#34;);robot.velocity.x = 0;}drawSprites();}</description>
+      <description>    Key Press Jump  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     console.log(&#34;Yo!&#34;) function setup() { robot = createSprite(150,150,50,160); robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;); robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;); createCanvas(800, 300); } function draw() { background(&#39;black&#39;); if(keyIsDown(39)){ console.log(&#34;ddddd&#34;) robot.changeAnimation(&#34;run&#34;); robot.velocity.x = 1; } else if(!keyIsDown(39)) { robot.changeAnimation(&#34;idle&#34;); robot.velocity.x = 0; } drawSprites(); }   </description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/animateoursprite/</guid>
-      <description>Animate Our First Spritecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var robot;function setup() {robot = createSprite(150,150,50,160);robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle02.png&#34;, &#34;../images/Idle09.png&#34;);createCanvas(800, 300);}function draw() {background(&#39;black&#39;);drawSprites();}</description>
+      <description>     Animate Our First Sprite  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var robot; function setup() { robot = createSprite(150,150,50,160); robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle02.png&#34;, &#34;../images/Idle09.png&#34;); createCanvas(800, 300); } function draw() { background(&#39;black&#39;); drawSprites(); }    </description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/ellipsefollowsmousewithpath/</guid>
-      <description>Ellipse Follows Our Mousecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}function setup() {createCanvas(800, 300);background(&#39;black&#39;);}function draw() {ellipse(mouseX, mouseY, 50, 50);}</description>
+      <description>     Ellipse Follows Our Mouse  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     function setup() { createCanvas(800, 300); background(&#39;black&#39;); } function draw() { ellipse(mouseX, mouseY, 50, 50); }   </description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/gameexamplesilent/</guid>
-      <description>Infinite Runner Silentcanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var runner;var runningAnimation;var jumpingAnimation;var gameBackground;var platformBackground;var gameFont;var gameOver = false;var platformsGroup;var currentPlatformLocation;var gravity;var jumpPower = 15;var runnerSpeed = 15;var currentBackgroundTilePosition;var backgroundTiles;var playerScore = 0;var jumpSound;function preload() {jumpingAnimation = loadAnimation(&#39;https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/robot/jump00.png&#39;, &#39;https://la-wit.</description>
+      <description>Infinite Runner Silent  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var runner; var runningAnimation; var jumpingAnimation; var gameBackground; var platformBackground; var gameFont; var gameOver = false; var platformsGroup; var currentPlatformLocation; var gravity; var jumpPower = 15; var runnerSpeed = 15; var currentBackgroundTilePosition; var backgroundTiles; var playerScore = 0; var jumpSound; function preload() { jumpingAnimation = loadAnimation( &#39;https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/robot/jump00.png&#39;, &#39;https://la-wit.</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/gameexample/</guid>
-      <description>Infinite Runnercanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var runner;var runningAnimation;var jumpingAnimation;var gameBackground;var platformBackground;var gameFont;var gameMusic;var gameOverSound;var gameOver = false;var platformsGroup;var currentPlatformLocation;var gravity;var jumpPower = 15;var runnerSpeed = 15;var currentBackgroundTilePosition;var backgroundTiles;var playerScore = 0;function preload() {jumpingAnimation = loadAnimation(&#39;https://la-wit.</description>
+      <description>Infinite Runner  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var runner; var runningAnimation; var jumpingAnimation; var gameBackground; var platformBackground; var gameFont; var gameMusic; var gameOverSound; var gameOver = false; var platformsGroup; var currentPlatformLocation; var gravity; var jumpPower = 15; var runnerSpeed = 15; var currentBackgroundTilePosition; var backgroundTiles; var playerScore = 0; function preload() { jumpingAnimation = loadAnimation( &#39;https://la-wit.</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/moveoursprite/</guid>
-      <description>Key Press Movecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var robot;function setup() {robot = createSprite(150,150,50,160);robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;);robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;);createCanvas(800, 300);}function draw() {background(&#39;black&#39;);if (keyIsDown(39)) {robot.velocity.x = 1;robot.changeAnimation(&#39;run&#39;);} else{robot.velocity.x = 0;robot.changeAnimation(&#39;idle&#39;);}drawSprites();}</description>
+      <description>     Key Press Move  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var robot; function setup() { robot = createSprite(150,150,50,160); robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;); robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;); createCanvas(800, 300); } function draw() { background(&#39;black&#39;); if (keyIsDown(39)) { robot.velocity.x = 1; robot.changeAnimation(&#39;run&#39;); } else{ robot.velocity.x = 0; robot.changeAnimation(&#39;idle&#39;); } drawSprites(); }    </description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/moveoursprite2/</guid>
-      <description>Key Press Move 2canvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var robot;function setup() {robot = createSprite(150,150,50,160);robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;);robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;);createCanvas(800, 300);}function draw() {background(&#39;black&#39;);if (keyIsDown(39)) {robot.velocity.x = 1;robot.changeAnimation(&#39;run&#39;);robot.mirrorX(1);} else if (keyIsDown(37)) {robot.velocity.x = -1;robot.changeAnimation(&#39;run&#39;);robot.mirrorX(-1);} else{robot.velocity.x = 0;robot.changeAnimation(&#39;idle&#39;);}drawSprites();}</description>
+      <description>     Key Press Move 2  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var robot; function setup() { robot = createSprite(150,150,50,160); robot.addAnimation(&#34;idle&#34;, &#34;../images/Idle01.png&#34;, &#34;../images/Idle09.png&#34;); robot.addAnimation(&#34;run&#34;, &#34;../images/Run01.png&#34;, &#34;../images/Run08.png&#34;); createCanvas(800, 300); } function draw() { background(&#39;black&#39;); if (keyIsDown(39)) { robot.velocity.x = 1; robot.changeAnimation(&#39;run&#39;); robot.mirrorX(1); } else if (keyIsDown(37)) { robot.velocity.x = -1; robot.changeAnimation(&#39;run&#39;); robot.mirrorX(-1); } else{ robot.velocity.x = 0; robot.changeAnimation(&#39;idle&#39;); } drawSprites(); }    </description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/movethecircle/</guid>
-      <description>Move the Circlecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var x = 100;var y = 100;function setup() {createCanvas(800, 300);}function draw() {if (keyIsDown(LEFT_ARROW)) {x -= 5;}if (keyIsDown(RIGHT_ARROW)) {x += 5;}if (keyIsDown(UP_ARROW)) {y -= 5;}if (keyIsDown(DOWN_ARROW)) {y += 5;}background(&#39;black&#39;);ellipse(x, y, 50, 50);}</description>
+      <description>     Move the Circle  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var x = 100; var y = 100; function setup() { createCanvas(800, 300); } function draw() { if (keyIsDown(LEFT_ARROW)) { x -= 5; } if (keyIsDown(RIGHT_ARROW)) { x += 5; } if (keyIsDown(UP_ARROW)) { y -= 5; } if (keyIsDown(DOWN_ARROW)) { y += 5; } background(&#39;black&#39;); ellipse(x, y, 50, 50); }   </description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/addourfirstsprite/</guid>
-      <description>Add Our First Spritecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}var robot;function setup() {robot = createSprite(150,150,50,160);createCanvas(800, 300);}function draw() {background(&#39;black&#39;);drawSprites();}</description>
+      <description>     Add Our First Sprite  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     var robot; function setup() { robot = createSprite(150,150,50,160); createCanvas(800, 300); } function draw() { background(&#39;black&#39;); drawSprites(); }   </description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/painttoy/</guid>
-      <description>Paint Toybody {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-flow: column no-wrap;flex-flow: column no-wrap;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;background: #888;background: url(&#34;https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png&#34;);}.main-wrapper {position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);background: rgba(0, 0, 0, 0.4);padding: 10px 5px;border-radius: 5px;display: -webkit-box;display: -ms-flexbox;display: flex;}.main-wrapper .button-wrapper, .</description>
+      <description>Paint Toy  body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column no-wrap; flex-flow: column no-wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: #888; background: url(&#34;https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png&#34;); } .main-wrapper { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); padding: 10px 5px; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; } .main-wrapper .button-wrapper, .</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keishasperkins.com/teaching/activate2018/notes/ellipsefollowsmousenopath/</guid>
-      <description>Remove the Path From Our Ellipsecanvas{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}function setup() {createCanvas(800, 300);}function draw() {background(&#39;black&#39;);ellipse(mouseX, mouseY, 50, 50);}</description>
+      <description>     Remove the Path From Our Ellipse  canvas{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }     function setup() { createCanvas(800, 300); } function draw() { background(&#39;black&#39;); ellipse(mouseX, mouseY, 50, 50); }   </description>
     </item>
     
   </channel>

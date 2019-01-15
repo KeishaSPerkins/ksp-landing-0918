@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://keishasperkins.com/teaching/automation-apps/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://keishasperkins.com/teaching/automation-apps/slides/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://keishasperkins.com/writing/automation-apps/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://keishasperkins.com/andmore/open-mic-tech/</loc>
+    <lastmod>2018-11-08T14:09:29-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://keishasperkins.com/teaching/upandrunningwithhugo/</loc>
     <lastmod>2018-10-24T11:08:21-06:00</lastmod>
   </url>
@@ -179,14 +199,18 @@
   
   <url>
     <loc>https://keishasperkins.com/</loc>
-    <lastmod>2018-04-03T02:17:22+00:00</lastmod>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://keishasperkins.com/authors/keisha-s-perkins/</loc>
-    <lastmod>2018-10-24T11:08:21-06:00</lastmod>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://keishasperkins.com/teaching/automation-apps/blog-post/</loc>
   </url>
   
   <url>
@@ -260,11 +284,12 @@
   
   <url>
     <loc>https://keishasperkins.com/writing/</loc>
-    <lastmod>2018-04-03T02:17:22+00:00</lastmod>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://keishasperkins.com/andmore/</loc>
+    <lastmod>2018-11-08T14:09:29-06:00</lastmod>
   </url>
   
 </urlset>
